@@ -1,0 +1,62 @@
+.slider {
+    --buttons-padding: 2rem;
+    background-image: url('../img/main/bg-image-HERO.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.slider__button {
+    position: absolute;
+    width: 48px;
+    aspect-ratio: 1;
+    top: 50%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.slider__button#slider-button-to-left {
+    left: var(--buttons-padding);
+    background-image: url('../img/icons/prev-btn-slider-ToLeft.png');
+}
+.slider__button#slider-button-to-right {
+    right: var(--buttons-padding);
+    background-image: url('../img/icons/prev-btn-slider-ToRight.png');
+}
+.slider__button:hover {
+    background-color: #ffffffd4;
+}
+.slider__wrapper {
+    display: grid;
+    grid-template-columns: 100% 100% 100% 100% 100%;
+    overflow-x: scroll;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+.slider__wrapper::-webkit-scrollbar {
+    width: 0;
+}
+.slider__wrapper > * {
+    flex-grow: 1;
+}
+.block {
+    padding: 220px 0;
+    color: #fff;
+}
+.block__content {
+    width: min-content;
+}
+.block__tittle {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+.block__parag {
+    font-size: 1.25rem;
+    line-height: 150%;
+    font-weight: 300;
+}
+

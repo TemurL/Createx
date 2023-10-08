@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.min.css">
-        <title>Createx</title>
-    </head>
+    @@include('./html/head.html', {
+        'tittle': 'Createx'
+    })
     <body class="body">
         <div class="wrapper">
             @@include('./html/header.html')
             <main class="main">
+                <section class="hero">
+                    <div class="slider">
+                        <a href="#slider-block-0">
+                            <div class="slider__button" id="slider-button-to-left"></div>
+                        </a>
+                        <div class="slider__wrapper" show="1">
+                            <div class="block slider__block" id="slider-block-1">
+                                <div class="block__container">
+                                    <div class="block__content">
+                                        <h2 class="block__tittle">Createx <br>construction</h2>
+                                        <p class="block__parag">Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block slider__block" id="slider-block-2">
+                                <div class="block__container">
+                                    <div class="block__content">
+                                        <h2 class="block__tittle">another <br>context</h2>
+                                        <p class="block__parag">Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block slider__block" id="slider-block-3">
+                                <div class="block__container">
+                                    <div class="block__content">
+                                        <h2 class="block__tittle">Createx <br>EEERRRDD!!</h2>
+                                        <p class="block__parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda quia ratione quae? Itaque, maxime nihil nam rem reiciendis vero.. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block slider__block" id="slider-block-4">
+                                <div class="block__container">
+                                    <div class="block__content">
+                                        <h2 class="block__tittle">Createx <br>EEERRRDD!!</h2>
+                                        <p class="block__parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda quia ratione quae? Itaque, maxime nihil nam rem reiciendis vero.. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block slider__block" id="slider-block-5">
+                                <div class="block__container">
+                                    <div class="block__content">
+                                        <h2 class="block__tittle">Createx <br>EEERRRDD!!</h2>
+                                        <p class="block__parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate assumenda quia ratione quae? Itaque, maxime nihil nam rem reiciendis vero.. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#slider-block-2">
+                            <div class="slider__button" id="slider-button-to-right"></div>
+                        </a>
+                    </div>
+                </section>
             </main>
             <script src="js/app.min.js"></script>
         </div>

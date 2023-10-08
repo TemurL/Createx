@@ -64,7 +64,13 @@ ul {
         margin: 0 0 5px 0;
         font-size: 12px;
         font-weight: 500;
+        transition: 0.25s;
+    }
+    &:hover {
+        color: var(--accent-color)
     }
 }
+
+@import './main.scss';
 
 @import './media/main-media.scss';
