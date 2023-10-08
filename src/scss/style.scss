@@ -1,0 +1,10 @@
+@import './fonts.scss';
+
+:root {
+    --accent-color: #FF5A30;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--accent-color);
+}
