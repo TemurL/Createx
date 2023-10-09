@@ -1,5 +1,7 @@
 @import './fonts.scss';
-
+* {
+    box-sizing: border-box;
+}
 :root {
     --accent-color: #FF5A30;
     --gray-color: #424551;
@@ -10,7 +12,6 @@ html {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     margin: 0;
-    box-sizing: border-box;
 }
 body {
     margin: 0;

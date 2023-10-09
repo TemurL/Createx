@@ -1,19 +1,41 @@
 .slider {
-    --buttons-padding: 2rem;
+    --transition-duration: 1s;
+    --buttons-padding: 5%;
     background-image: url('../img/main/bg-image-HERO.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    box-shadow: inset 0 0 0px 30vw rgba(0, 0, 0, 0.463);
+    transition: var(--transition-duration);
+}
+
+.slider_on-transition {
+    box-shadow: inset 0 0 0px 30vw rgb(0, 0, 0);
+}
+
+.slider[show="1"] {
+    background-image: url('../img/main/bg-image-HERO.jpg');
+}
+.slider[show="2"] {
+    background-image: url('../img/main/image-second-back-HERO.png');
+}
+
+@media screen and (max-width: 1035px) {
+    .slider {
+        --buttons-padding: 2rem;
+    }
 }
 
 .slider__button {
     position: absolute;
-    width: 48px;
+    width: 55px;
     aspect-ratio: 1;
     top: 50%;
     border-radius: 50%;
     transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .slider__button#slider-button-to-left {
     left: var(--buttons-padding);
@@ -28,7 +50,7 @@
 }
 .slider__wrapper {
     display: grid;
-    grid-template-columns: 100% 100% 100% 100% 100%;
+    grid-template-columns: repeat(var(--blocksQtt), 100%);
     overflow-x: scroll;
     width: 80%;
     max-width: 1400px;
