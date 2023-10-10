@@ -2,6 +2,7 @@ const leftBtn = document.getElementById('slider-button-to-left');
 const rightBtn = document.getElementById('slider-button-to-right');
 const wrapper = document.getElementsByClassName('slider__wrapper')[0];
 const slider = document.getElementsByClassName('slider')[0];
+const mapingBtnArr = Array.from(document.getElementsByClassName('slider__maping-button'));
 
 const setGridTamplate = () => {
     let blocksQtt = wrapper.children.length;
@@ -41,6 +42,35 @@ const moveToLeft = () => {
     }
 }
 
+const updateMap = () => {
+    mapingBtnArr.forEach((btn) => {
+        btn.classList.remove('slider__maping-button_active');
+    })
+    setTimeout(() => {
+        let show = Number(wrapper.getAttribute('show'));
+        mapingBtnArr[show - 1].classList.add('slider__maping-button_active');
+    }, 800)
+}
+
+mapingBtnArr.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        let show = Number(btn.textContent.split('')[1]);
+        if (show !== Number(wrapper.getAttribute('show'))) {
+            rightBtn.parentElement.setAttribute('href', `#slider-block-${show + 1}`);
+            leftBtn.parentElement.setAttribute('href', `#slider-block-${show - 1}`);
+            wrapper.setAttribute('show', show);
+            slider.classList.add('slider_on-transition');
+            setTimeout(() => {
+                slider.setAttribute('show', show);
+            }, 250);
+            setTimeout(() => {
+                slider.classList.remove('slider_on-transition');
+            }, 500);
+            }
+    })
+})
+
 setGridTamplate();
+wrapper.addEventListener('scroll', updateMap)
 rightBtn.addEventListener('click', () => setTimeout(moveToRight, 100));
 leftBtn.addEventListener('click', () => setTimeout(moveToLeft, 100));

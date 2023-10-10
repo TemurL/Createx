@@ -1,18 +1,8 @@
-@media screen and (max-width: 1400px) {
-    .slider {
-        // --buttons-padding: 2rem;
-    }
-    .slider__button {
-        width: 40px;
-    }
-    
-}
-
 @media screen and (max-width: 1035px) {
     .header__contacts {
         display: none;
     }
     .slider {
-        --buttons-padding: 0.5rem;
+        --buttons-padding: 1rem;
     }
 }

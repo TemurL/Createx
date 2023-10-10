@@ -4,6 +4,7 @@
 }
 :root {
     --accent-color: #FF5A30;
+    --accent-color-darker: #ab2c0c;
     --gray-color: #424551;
     --container-padding-inline: 15px;
     --header-height: 92px;
@@ -31,6 +32,36 @@ ul {
     max-width: 1230px;
     margin: 0 auto;
     padding-inline: var(--container-padding-inline);
+}
+.accent-colored {
+    font-style: normal;
+    color: var(--accent-color);
+}
+.button {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 325%;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    padding: 0 2.5rem;
+    border: none;
+    transition: 0.3s;
+}
+.filled-button {
+    background-color: var(--accent-color);
+}
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.filled-button:hover {
+    background-color: var(--accent-color-darker);
+}
+.transparent-button:hover {
+    background-color: white;
+    color: #000;
 }
 .header__content {
     display: flex;
