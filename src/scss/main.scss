@@ -1,17 +1,18 @@
 .slider {
-    --transition-duration: 1s;
-    --buttons-padding: 5%;
+    --transition-duration: 0.4s;
+    --buttons-padding: 2rem;
     background-image: url('../img/main/bg-image-HERO.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    box-shadow: inset 0 0 0px 30vw rgba(0, 0, 0, 0.463);
-    transition: var(--transition-duration);
+    box-shadow: inset 0 0 0px 100vw rgba(0, 0, 0, 0.713);
+    transition-property: box-shadow, background-image;
+    transition-duration: var(--transition-duration), 0.1s;
 }
 
 .slider_on-transition {
-    box-shadow: inset 0 0 0px 30vw rgb(0, 0, 0);
+    box-shadow: inset 0 0 0px 100vw rgb(0, 0, 0);
 }
 
 .slider[show="1"] {
@@ -20,22 +21,20 @@
 .slider[show="2"] {
     background-image: url('../img/main/image-second-back-HERO.png');
 }
-
-@media screen and (max-width: 1035px) {
-    .slider {
-        --buttons-padding: 2rem;
-    }
+.slider[show="3"] {
+    background-image: url('../img/main/construction.jpeg');
 }
 
 .slider__button {
     position: absolute;
-    width: 55px;
+    width: 70px;
     aspect-ratio: 1;
     top: 50%;
     border-radius: 50%;
     transition: 0.3s;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #ffffff86;
 }
 .slider__button#slider-button-to-left {
     left: var(--buttons-padding);
@@ -46,7 +45,10 @@
     background-image: url('../img/icons/prev-btn-slider-ToRight.png');
 }
 .slider__button:hover {
-    background-color: #ffffffd4;
+    background-color: #ffffff;
+}
+.slider__button_disabled {
+    background-color: #ffffff00;
 }
 .slider__wrapper {
     display: grid;

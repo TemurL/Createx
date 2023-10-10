@@ -13,35 +13,34 @@ const setGridTamplate = () => {
 const moveToRight = () => {
     let show = Number(wrapper.getAttribute('show'));
     if (show < wrapper.children.length) {
-        rightBtn.parentElement.setAttribute('href', `#slider-block-${show + 1}`);
+        rightBtn.parentElement.setAttribute('href', `#slider-block-${show + 2}`);
         leftBtn.parentElement.setAttribute('href', `#slider-block-${show}`);
         wrapper.setAttribute('show', show + 1);
         slider.classList.add('slider_on-transition');
         setTimeout(() => {
             slider.setAttribute('show', show + 1);
-        }, 500);
+        }, 250);
         setTimeout(() => {
             slider.classList.remove('slider_on-transition');
-        }, 1000);
-
+        }, 500);
     }
 }
 const moveToLeft = () => {
     let show = Number(wrapper.getAttribute('show'));
     if (show > 1) {
         rightBtn.parentElement.setAttribute('href', `#slider-block-${show}`);
-        leftBtn.parentElement.setAttribute('href', `#slider-block-${show - 1}`);
+        leftBtn.parentElement.setAttribute('href', `#slider-block-${show - 2}`);
         wrapper.setAttribute('show', show - 1);
         slider.classList.add('slider_on-transition');
         setTimeout(() => {
             slider.setAttribute('show', show - 1);
-        }, 500);
+        }, 250);
         setTimeout(() => {
             slider.classList.remove('slider_on-transition');
-        }, 1000);
+        }, 500);
     }
 }
 
 setGridTamplate();
-rightBtn.addEventListener('click', moveToRight);
-leftBtn.addEventListener('click', moveToLeft);
+rightBtn.addEventListener('click', () => setTimeout(moveToRight, 100));
+leftBtn.addEventListener('click', () => setTimeout(moveToLeft, 100));
