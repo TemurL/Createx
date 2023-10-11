@@ -63,6 +63,13 @@ ul {
     background-color: white;
     color: #000;
 }
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0px black;
+}
 .header__content {
     display: flex;
     align-items: center;

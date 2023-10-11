@@ -79,7 +79,7 @@
     position: relative;
     padding-block: 90px 150px;
     display: grid;
-    align-items: center;
+    align-items: start;
     grid-template-columns: repeat(var(--blocksQtt), 100%);
     overflow-x: scroll;
     width: 80%;
