@@ -1,4 +1,4 @@
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1080px) {
     .header__contacts {
         display: none;
     }
@@ -6,3 +6,32 @@
         --buttons-padding: 1rem;
     }
 }
+
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .mob-menu {
+        display: block;
+    }
+
+    .nav__ul {
+        display: none;
+    }
+
+    .mob-menu__button {
+        display: block;
+    }
+
+
+    .slider__map {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    // -------------
+}
+
