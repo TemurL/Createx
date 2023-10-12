@@ -6,6 +6,7 @@
     --accent-color: #FF5A30;
     --accent-color-darker: #ab2c0c;
     --gray-color: #424551;
+    --black-color: #1E212C;
     --container-padding-inline: 30px;
     --header-height: 92px;
 }
@@ -185,5 +186,19 @@ ul {
     text-align: end;
 }
 
-@import './main.scss';
+@import './slider.scss';
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--black-color);
+}
+.footer__tittle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 150%;
+
+}
+
 @import './media/main-media.scss';

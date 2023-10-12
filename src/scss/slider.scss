@@ -1,7 +1,7 @@
 .slider {
     --transition-duration: 0.4s;
     --buttons-padding: 3rem;
-    background-image: url('../img/main/bg-image-HERO.jpg');
+    background-image: url('../img/slider/bg-image-HERO.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -17,16 +17,16 @@
 }
 
 .slider[show="1"] {
-    background-image: url('../img/main/bg-image-HERO.jpg');
+    background-image: url('../img/slider/bg-image-HERO.jpg');
 }
 .slider[show="2"] {
-    background-image: url('../img/main/image-second-back-HERO.png');
+    background-image: url('../img/slider/image-second-back-HERO.png');
 }
 .slider[show="3"] {
-    background-image: url('../img/main/construction.jpeg');
+    background-image: url('../img/slider/construction.jpeg');
 }
 .slider[show="4"] {
-    background-image: url('../img/main/image-hero-forth.jpg');
+    background-image: url('../img/slider/image-hero-forth.jpg');
 }
 
 .slider__button {
@@ -101,9 +101,8 @@
     max-height: 100%;
     overflow: scroll;
 }
-.block::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
+.block::-webkit-scrollbar {
+    height: 0;
 }
 .block__content {
     width: min-content;
