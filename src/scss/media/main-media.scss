@@ -5,30 +5,46 @@
     .slider {
         --buttons-padding: 1rem;
     }
-}
-
-@media screen and (max-width: 767px) {
-
-    html {
-        font-size: 14px;
-    }
-
-    .mob-menu {
-        display: block;
-    }
-
-    .nav__ul {
-        display: none;
-    }
-
-    .mob-menu__button {
-        display: block;
-    }
-
-
     .slider__map {
         display: none;
     }
+    .slider__wrapper {
+        padding-block: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --header-height: 65px;
+    }
+    html {
+        font-size: 12px;
+    }
+    .mob-menu {
+        display: block;
+    }
+    .nav__ul {
+        display: none;
+    }
+    .mob-menu__button {
+        display: block;
+    }
+    .slider__button {
+        display: none;
+    }
+    .slider__wrapper {
+        padding-block: 50px 0;
+    }
+    .block {
+        padding-block: 1rem;
+    }
+    .block__tittle {
+        font-size: 30px;
+    }
+    .block__buttons {
+        flex-direction: column;
+    }
+
 
 }
 @media screen and (max-width: 360px) {

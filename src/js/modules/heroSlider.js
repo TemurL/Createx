@@ -76,6 +76,50 @@ const heroSlider = () => {
         wrapper.addEventListener('scroll', updateMap)
         rightBtn.addEventListener('click', () => setTimeout(moveToRight, 100));
         leftBtn.addEventListener('click', () => setTimeout(moveToLeft, 100));
+
+        wrapper.addEventListener('touchstart', handleTouchStart, false);
+        wrapper.addEventListener('touchmove', handleTouchMove, false);
+        let xDown = null;
+        let yDown = null;
+        
+        function getTouches(evt) {
+            return evt.touches
+        }
+        
+        function handleTouchStart(evt) {
+            const firstTouch = getTouches(evt)[0];
+            xDown = firstTouch.clientX;
+            yDown = firstTouch.clientY;
+        };
+        
+        function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+            return;
+        }
+        
+        let xUp = evt.touches[0].clientX;
+        let yUp = evt.touches[0].clientY;
+        
+        let xDiff = xDown - xUp;
+        let yDiff = yDown - yUp;
+        
+        if ( Math.abs(xDiff) > Math.abs(yDiff) ) {/* отлавливаем разницу в движении */
+            if ( xDiff > 0 ) {
+                rightBtn.click();
+            } else {
+                leftBtn.click();
+            }
+        } else {
+            if ( yDiff > 0 ) {
+            /* swipe вверх */
+            } else {
+            /* swipe вниз */
+            }
+        }
+        /* свайп был, обнуляем координаты */
+        xDown = null;
+        yDown = null;
+        };
     }
 }
 heroSlider();

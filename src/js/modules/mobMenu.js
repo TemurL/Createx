@@ -7,16 +7,18 @@ const mobMenu = () => {
     const modifMenuBody = 'mob-menu_active';
     const modifScrollLock = 'scroll-lock';
 
-    menuBtn.addEventListener('click', () => {
+    const menuAct = () => {
         menuBtn.classList.toggle(modifMenuBtn);
         menuBody.classList.toggle(modifMenuBody);
         document.body.classList.toggle(modifScrollLock);
+        document.querySelector('html').classList.toggle(modifScrollLock);
+    }
+    menuBtn.addEventListener('click', () => {
+        menuAct();
     })
     menuLiArr.forEach((li) => {
         li.addEventListener('click', () => {
-            menuBtn.classList.toggle(modifMenuBtn);
-            menuBody.classList.toggle(modifMenuBody);
-            document.body.classList.toggle(modifScrollLock);
+            menuAct();
         })
     })
 }
