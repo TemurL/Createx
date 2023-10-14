@@ -120,8 +120,8 @@ ul {
 
 .mob-menu__button {
     display: none;
-    width: calc(var(--header-height) - 31px);
-    aspect-ratio: 1;
+    height: calc(var(--header-height) * 0.44);
+    aspect-ratio: 2/1.5;
     position: relative;
     transition: 0.3s;
     cursor: pointer;
@@ -138,11 +138,9 @@ ul {
     background-color: #000;
     transition: 0.3s;
 }
-.mob-menu__button::before {
-    top: 5px;
-}
+
 .mob-menu__button::after {
-    bottom: 5px;
+    bottom: 0px;
 }
 
 .mob-menu__button_active {
@@ -151,11 +149,11 @@ ul {
 
 .mob-menu__button_active::before {
     transform: rotate(45deg);
-    top: 13.5px;
+    top: 40%;
 }
 .mob-menu__button_active::after {
     transform: rotate(-45deg);
-    bottom: 16.5px;
+    bottom: 40%;
 }
 
 .mob-menu {
