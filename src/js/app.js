@@ -1,5 +1,10 @@
 import * as TLFunc from './modules/functions.js';
-import './modules/heroSlider.js';
-import './modules/mobMenu.js';
+import { heroSlider } from './modules/heroSlider.js';
+import { mobMenu } from './modules/mobMenu.js';
+import { serviceCardHover } from './modules/serviceCardHover.js';
+
 TLFunc.isWebp()
 
+heroSlider();
+mobMenu();
+serviceCardHover()

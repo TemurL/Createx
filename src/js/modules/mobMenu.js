@@ -1,4 +1,4 @@
-const mobMenu = () => {
+export const mobMenu = () => {
     const menuBtn = document.getElementsByClassName('mob-menu__button')[0];
     const menuBody = document.getElementsByClassName('mob-menu')[0];
     const menuLiArr = Array.from(document.getElementsByClassName('mob-menu__li'));
@@ -22,4 +22,3 @@ const mobMenu = () => {
         })
     })
 }
-mobMenu();

@@ -340,6 +340,10 @@ ul {
 
 .services {
     background-color: #F0F1F2;
+    background-image: url('@img/bg-image-services-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .services__content {
@@ -366,8 +370,31 @@ ul {
     min-width: 190px;
     border-radius: 4px;
     background-color: #FFF;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex: 1;
+    transition: 0.4s;
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.services__card:hover {
+    background-color: #000000aa;
+    color: white;
+}
+
+#services__card-1:hover {
+    background-image: url('@img/image-service-card-back.jpg');
+}
+#services__card-2:hover {
+    background-image: url('@img/image-IMG-FOOTER-BG.jpg');
+}
+#services__card-3:hover {
+    background-image: url('@img/slider/image-hero-forth.jpg');
+}
+#services__card-4:hover {
+    background-image: url('@img/slider/bg-image-HERO.jpg');
 }
 
 .services__card-tittle {

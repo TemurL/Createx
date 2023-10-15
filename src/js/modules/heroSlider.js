@@ -1,4 +1,4 @@
-const heroSlider = () => {
+export const heroSlider = () => {
     if (document.title === 'Createx') {
         const leftBtn = document.getElementById('slider-button-to-left');
         const rightBtn = document.getElementById('slider-button-to-right');
@@ -122,4 +122,3 @@ const heroSlider = () => {
         };
     }
 }
-heroSlider();

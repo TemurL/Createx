@@ -57,7 +57,7 @@
 .slider__map {
     position: absolute;
     bottom: 90px;
-    left: 10%;
+    left: 15%;
     z-index: 1;
 }
 .slider__maping-button {
@@ -85,6 +85,7 @@
     width: 80%;
     height: calc(100vh - var(--header-height));
     max-width: 1400px;
+    max-height: 1300px;
     margin: 0 auto;
     justify-content: space-between;
     scroll-behavior: smooth;
