@@ -56,6 +56,10 @@
         transform: rotate(0deg);
         margin-block: 2rem;
     }
+
+    .ask-mail__content {
+        padding: 48px 15px;
+    }
     
     .ask-mail__form {
         flex-direction: column;
@@ -67,6 +71,13 @@
 
     .ask-mail__input {
         width: 100%;
+    }
+    .portfolio__cards-block {
+        height: auto;
+        flex-direction: column;
+    }
+    .portfolio__card {
+        flex-basis: 440px;
     }
     .footer__form {
         margin: 0 auto;
