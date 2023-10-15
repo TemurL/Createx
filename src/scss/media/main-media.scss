@@ -11,6 +11,9 @@
     .slider__wrapper {
         padding-block: 50px;
     }
+    .ask-mail__input {
+        width: 17vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -45,6 +48,26 @@
         flex-direction: column;
     }
 
+    .core-values__cards-block {
+        flex-direction: column;
+    }
+
+    .core-values__cards-block hr {
+        transform: rotate(0deg);
+        margin-block: 2rem;
+    }
+    
+    .ask-mail__form {
+        flex-direction: column;
+    }
+
+    .ask-mail__form > div {
+        width: 100%;
+    }
+
+    .ask-mail__input {
+        width: 100%;
+    }
     .footer__form {
         margin: 0 auto;
         padding: 40px 15px;
