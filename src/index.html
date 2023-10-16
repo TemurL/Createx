@@ -157,31 +157,55 @@
                         <div class="portfolio__content">
                             <div class="tittle portfolio__tittle">Browse our selected projects <br> and learn more about our work</div>
                             <div class="portfolio__cards-block">
-                                <div class="portfolio__card" id="portfolio__card-1">
-                                    <div class="portfolio__card-text-content">
-                                        <p class="portfolio__card-tittle">Red Finger Building</p>
-                                        <p class="parag portfolio__card-parag">Business Centers</p>
-                                        <a href="./work.html" class="button transparent-button portfolio__button">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__card" id="portfolio__card-2">
-                                    <div class="portfolio__card-text-content">
-                                        <p class="portfolio__card-tittle">Cubes Building</p>
-                                        <p class="parag portfolio__card-parag">Business Centers</p>
-                                        <a href="./work.html" class="button transparent-button portfolio__button">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="portfolio__card" id="portfolio__card-3">
-                                    <div class="portfolio__card-text-content">
-                                        <p class="portfolio__card-tittle">The Pencil Building</p>
-                                        <p class="parag portfolio__card-parag">Stores & Malls</p>
-                                        <a href="./work.html" class="button transparent-button portfolio__button">View Project</a>
-                                    </div>
-                                </div>
+                                @@include('./html/card.html', {
+                                    'parentBlock': 'portfolio',
+                                    'tittle': 'The Pencil Building',
+                                    'parag': 'Business Centers',
+                                    'id': '1'
+                                })
+                                @@include('./html/card.html', {
+                                    'parentBlock': 'portfolio',
+                                    'tittle': 'Cubes Building',
+                                    'parag': 'Business Centers',
+                                    'id': '2'
+                                })
+                                @@include('./html/card.html', {
+                                    'parentBlock': 'portfolio',
+                                    'tittle': 'The Pencil Building',
+                                    'parag': 'Stores & Malls',
+                                    'id': '3'
+                                })
                             </div>
                             <div class="sec-footer portfolio__sec-footer">
                                 <div class="tittle sec-footer__tittle">Explore all our works</div>
                                 <a href="./services.html" class="sec-footer__link"><button class="button filled-button portfolio__link">view portfolio</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="clients">
+                    <div class="container">
+                        <div class="clients__content">
+                            <div class="tittle clients__tittle">Supported by 12+ partners</div>
+                            <div class="clients__logos">
+                                <img src="@img/logos/client-logo-1.png" alt="">
+                                <img src="@img/logos/client-logo-2.png" alt="">
+                                <img src="@img/logos/client-logo-3.png" alt="">
+                                <img src="@img/logos/client-logo-4.png" alt="">
+                                <img src="@img/logos/client-logo-5.png" alt="">
+                                <img src="@img/logos/client-logo-6.png" alt="">
+                            </div>
+                            <div class="review clients__review">
+                                <div class="review__text-content">
+                                    <div class="tittle review__tittle">What our clients are saying</div>
+                                    <img class="review__profile-photo" src="@img/profile-image.png" alt="">
+                                    <p class="parag review__parag">Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. </p>
+                                    <div class="review__author-info">
+                                        <p class="review__author-name">Shawn Edwards</p>
+                                        <p class="review__author-position">Position, Company name</p>
+                                    </div>
+                                </div>
+                                <img class="clients__img" src="@img/image-clients.jpg" alt="">
                             </div>
                         </div>
                     </div>
