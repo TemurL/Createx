@@ -21,6 +21,9 @@
     .clients__img {
         width: 30vw;
     }
+    .clients + * {
+        padding-top: inherit;
+    }
 }
 
 @media screen and (max-width: 767px) {
