@@ -427,6 +427,7 @@ ul {
     bottom: -72px;
     padding-block: 20px;
     transition: 0.3s;
+    box-shadow: 0 0 15px 0px #0000007d;
 }
 
 .portfolio__card-text-content:hover {
@@ -585,6 +586,29 @@ ul {
     margin-top: 20px;
     color: var(--black-color);
     text-align: center;
+}
+
+@import './newCard';
+
+.news__cards-block {
+    margin-block: 60px;
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#new-card_001 {
+    height: calc(200% + 30px);
+    grid-row: 0 / 2;
+    grid-column: 1;
+}
+#new-card_002 {
+    grid-row: 1;
+    grid-column: 2;
+}
+#new-card_003 {
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .footer__up-side {

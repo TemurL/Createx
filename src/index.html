@@ -233,6 +233,49 @@
                                 </div>
                             </div>
                         </div>
+                        <section class="news facts__news">
+                            <div class="news__content">
+                                <div class="tittle news__tittle">Recent news</div>
+                                <div class="news__cards-block">
+                                    @@include('./html/newsCard.html', {
+                                        'tittle': 'How to Build Climate Change-Resilient Infrastructure',
+                                        'kategory': 'Industry News',
+                                        'id': '001',
+                                        'date': 'June 24, 2020',
+                                        'commentsQtt': '4',
+                                        'parentclass': 'news',
+                                        'img-path': "../img/news-card/image__001.jpg",
+                                        'preview-parag': 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...'
+                                    })
+                                    @@include('./html/newsCard.html', {
+                                        'tittle': 'How Construction Can Help Itself',
+                                        'kategory': 'Innovation',
+                                        'id': '002',
+                                        'date': 'June 12, 2020',
+                                        'commentsQtt': 'No',
+                                        'parentclass': 'news',
+                                        'img-path': "../img/news-card/image__002.jpg",
+                                        'preview-parag': '',
+                                        'small': 'small'
+                                    })
+                                    @@include('./html/newsCard.html', {
+                                        'tittle': 'Types of Flooring Materials',
+                                        'kategory': 'Company News',
+                                        'id': '003',
+                                        'date': 'December 1, 2019',
+                                        'commentsQtt': 'No',
+                                        'parentclass': 'news',
+                                        'img-path': "../img/news-card/image__003.jpg",
+                                        'preview-parag': '',
+                                        'small': 'small'
+                                    })
+                                </div>
+                                <div class="sec-footer news__sec-footer">
+                                    <div class="tittle sec-footer__tittle">Explore all our news posts</div>
+                                    <a href="./services.html" class="sec-footer__link"><button class="button filled-button portfolio__link">view all news</button></a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </section>
             </main>
