@@ -1,3 +1,9 @@
+.slider__container {
+    margin: 0 auto;
+    max-width: 1485px;
+    position: relative;
+}
+
 .slider {
     --transition-duration: 0.4s;
     --buttons-padding: 3rem;
@@ -85,7 +91,7 @@
     width: 80%;
     height: calc(100svh - var(--header-height));
     max-width: 1400px;
-    max-height: 1300px;
+    max-height: 1100px;
     margin: 0 auto;
     justify-content: space-between;
     scroll-behavior: smooth;

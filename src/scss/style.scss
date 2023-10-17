@@ -430,7 +430,7 @@ ul {
     box-shadow: 0 0 15px 0px #0000007d;
 }
 
-.portfolio__card-text-content:hover {
+.portfolio__card:hover .portfolio__card-text-content {
     bottom: 0;
 }
 .portfolio__card-text-content_active {
@@ -512,6 +512,13 @@ ul {
 
 .clients + * {
     padding-top: 60px;
+}
+
+.facts {
+    background-image: url('@img/facts-bg-image.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: -300px;
 }
 
 
@@ -647,6 +654,31 @@ ul {
     background-color: var(--black-color);
     color: #FFF;
     padding-block: 80px;
+}
+
+
+.footer__bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.fooer__heart-icon {
+    position: relative;
+    top: 3px;
+}
+
+.footer__go-to-top a {
+    display: inline-block;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: var(--accent-color);
+    background-image: url('@img/icons/Up-chevron.svg');
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    margin-inline-start: 1rem;
 }
 
 @import './media/main-media.scss';

@@ -27,6 +27,8 @@
     font-weight: 700;
     line-height: 150%;
     color: var(--black-color);
+    transition: 0.3s;
+    cursor: pointer;
 }
 .new-card__info {
     color: var(--light-gray-color);
@@ -52,4 +54,8 @@
     line-height: 160%;
     overflow: hidden;
     -webkit-line-clamp: 3;
+}
+
+.new-card:hover .new-card__tittle {
+    color: var(--accent-color);
 }
