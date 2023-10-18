@@ -101,10 +101,37 @@
         display: none;
     }
 
+
+    #new-card_001 {
+        height: 540px;
+    }
+    #new-card_003 {
+        grid-column: 1;
+    }
+
+
     .footer__form {
         margin: 0 auto;
         padding: 40px 15px;
         width: 100%;
+    }
+
+    .footer__socials > *:first-child{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .down-side__top {
+        flex-direction: column;
+    }
+    .down-side__button {
+        padding: 0 1.5rem;
+    }
+    .down-side__subsribe {
+        min-width: auto;
+    }
+    .footer__go-to-top {
+        display: none;
     }
 
 }

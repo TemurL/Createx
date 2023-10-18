@@ -409,7 +409,7 @@ ul {
     position: relative;
     flex: 1;
     text-align: center;
-    background-size: 120%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 0;
     background-position-x: center;
@@ -441,9 +441,6 @@ ul {
 
 .portfolio__card:hover .portfolio__card-text-content {
     bottom: 0;
-}
-.portfolio__card:hover {
-    background-size: 125%;
 }
 .portfolio__card-text-content_active {
     bottom: 0;
@@ -618,15 +615,9 @@ ul {
 
 #new-card_001 {
     height: calc(200% + 30px);
-    grid-row: 0 / 2;
-    grid-column: 1;
 }
-#new-card_002 {
-    grid-row: 1;
-    grid-column: 2;
-}
+
 #new-card_003 {
-    grid-row: 2;
     grid-column: 2;
 }
 
