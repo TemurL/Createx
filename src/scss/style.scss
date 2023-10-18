@@ -19,6 +19,9 @@ html {
     scroll-padding-top: calc(90px + var(--header-height));
     overflow-x: hidden;
 }
+address {
+    font-style: inherit;
+}
 .body {
     margin: 0;
     padding: 0;
@@ -80,6 +83,10 @@ ul {
     color: var(--light-gray-color);
     font-size: 18px;
     line-height: 150%;
+}
+.white-text {
+    color: #FFF;
+    font-style: inherit;
 }
 .header {
     position: sticky;
@@ -402,11 +409,13 @@ ul {
     position: relative;
     flex: 1;
     text-align: center;
-    background-size: cover;
+    background-size: 120%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position-y: 0;
+    background-position-x: center;
     overflow: hidden;
     border-radius: 4px;
+    transition: 0.3s;
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
 }
 
@@ -432,6 +441,9 @@ ul {
 
 .portfolio__card:hover .portfolio__card-text-content {
     bottom: 0;
+}
+.portfolio__card:hover {
+    background-size: 125%;
 }
 .portfolio__card-text-content_active {
     bottom: 0;
@@ -654,6 +666,71 @@ ul {
     background-color: var(--black-color);
     color: #FFF;
     padding-block: 80px;
+}
+
+
+.down-side__bottom > *:last-child {
+    flex-basis: 35%;
+}
+
+.down-side__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;;
+    margin-block-end: 50px;
+}
+
+.footer__socials > * {
+    margin-inline-end: 16px;
+}
+.footer__socials > *:first-child {
+    margin-inline-end: 60px;
+}
+
+.footer__parag {
+    font-size: 14px;
+}
+
+.down-side__tittle {
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.down-side__subsribe {
+    display: flex;
+    height: 45px;
+    margin-block: 20px;
+    min-width: 400px;
+}
+
+.down-side__input {
+    margin: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.down-side__button {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    line-height: 100%;
+}
+
+.down-side__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-block: 60px;
+}
+
+.down-side__colomn-tittle {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: start;
 }
 
 
