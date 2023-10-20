@@ -10,5 +10,12 @@ TLFunc.isWebp()
 heroSlider();
 mobMenu();
 serviceCardHover();
-portfolioCard();
+// portfolioCard();
 newCard();
+
+const formBtn = document.getElementById('footer__form-btn');
+const checker = document.getElementById('agree');
+
+checker.onchange = function() {
+    formBtn.disabled = !this.checked;
+}

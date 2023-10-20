@@ -653,6 +653,10 @@ ul {
     margin-inline: auto;
 }
 
+.footer__button:disabled {
+    background-color: var(--light-gray-color);
+}
+
 .footer__down-side {
     background-color: var(--black-color);
     color: #FFF;
@@ -680,6 +684,11 @@ ul {
 
 .footer__parag {
     font-size: 14px;
+    transition: 0.2s;
+}
+
+a.footer__parag:hover {
+    color: #FFF;
 }
 
 .down-side__tittle {

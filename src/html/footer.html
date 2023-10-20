@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer__up-side">
         <div class="container">
-            <from class="footer__form">
+            <from class="footer__form" id="footer__form" action="" method="get">
                 <p class="footer__tittle">A quick way to discuss details</p>
                 <label class="label footer__label" for="name">Name*</label>
                 <input class="input footer__input" type="text" id="name" placeholder="Your name">
@@ -13,7 +13,7 @@
                 <input class="input footer__input" type="text" placeholder="Your message">
                 <input type="checkbox" id="agree" name="">
                 <label class="label footer__label" for="agree">I agree to receive communications from Createx <br> Construction Bureau.</label>
-                <button class="button filled-button footer__button">send request</button>
+                <button class="button filled-button footer__button" id="footer__form-btn" form="footer__form" type="submit" disabled>send request</button>
             </from>
         </div>
     </div>
@@ -49,15 +49,15 @@
                 </address>
                 <div class="down-side__colomn">
                     <div class="tittle down-side__colomn-tittle">WHO WE ARE</div>
-                    <p class="parag footer__parag"><a href="./index.html#main">About us</a></p>
-                    <p class="parag footer__parag"><a href="./index.html#main">Available Positions</a></p>
-                    <p class="parag footer__parag"><a href="../contacts.html">Contacts</a></p>
+                    <p><a class="parag footer__parag" href="./index.html#main">About us</a></p>
+                    <p><a class="parag footer__parag" href="./index.html#main">Available Positions</a></p>
+                    <p><a class="parag footer__parag" href="../contacts.html">Contacts</a></p>
                 </div>
                 <div class="down-side__colomn">
                     <div class="tittle down-side__colomn-tittle">WHO WE ARE</div>
-                    <p class="parag footer__parag"><a href="../services.html">Services</a></p>
-                    <p class="parag footer__parag"><a href="../work.html">Work</a></p>
-                    <p class="parag footer__parag"><a href="../news.html">News</a></p>
+                    <p><a class="parag footer__parag" href="../services.html">Services</a></p>
+                    <p><a class="parag footer__parag" href="../work.html">Work</a></p>
+                    <p><a class="parag footer__parag" href="../news.html">News</a></p>
                 </div>
             </div>
             <div class="footer__bottom">
