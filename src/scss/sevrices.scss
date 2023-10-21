@@ -1,0 +1,20 @@
+.services-hero {
+    --hero-padding-top: 100px;
+    position: relative;
+    top: calc(var(--header-height) * -1);
+    background-image: url('../img/SERVICES-background.png');
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: calc(var(--hero-padding-top) + var(--header-height));
+}
+
+.services-hero__content {
+    max-width: 50%;
+}
+
+.services-hero__tittle {
+    text-align: start;
+    margin-bottom: 2rem;
+}
+

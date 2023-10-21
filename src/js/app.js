@@ -4,6 +4,8 @@ import { mobMenu } from './modules/mobMenu.js';
 import { portfolioCard } from './modules/portfolioCard.js';
 import { serviceCardHover } from './modules/serviceCardHover.js';
 import { newCard } from './modules/newCard.js';
+import { formBtn } from './modules/formBtn.js';
+import { headerBack } from './modules/headerBack.js';
 
 TLFunc.isWebp()
 
@@ -12,10 +14,5 @@ mobMenu();
 serviceCardHover();
 // portfolioCard();
 newCard();
-
-const formBtn = document.getElementById('footer__form-btn');
-const checker = document.getElementById('agree');
-
-checker.onchange = function() {
-    formBtn.disabled = !this.checked;
-}
+formBtn();
+headerBack();

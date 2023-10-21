@@ -94,6 +94,11 @@ ul {
     z-index: 1000;
     background-color: #FFF;
     box-shadow: 0 0 20px 0px black;
+    transition: 0.3s;
+}
+.header_transparent {
+    background-color: transparent;
+    box-shadow: none;
 }
 .header__content {
     display: flex;
@@ -762,4 +767,5 @@ a.footer__parag:hover {
     margin-inline-start: 1rem;
 }
 
+@import './sevrices.scss';
 @import './media/main-media.scss';
