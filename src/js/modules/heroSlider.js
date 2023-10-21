@@ -5,6 +5,7 @@ export const heroSlider = () => {
         const wrapper = document.getElementsByClassName('slider__wrapper')[0];
         const slider = document.getElementsByClassName('slider')[0];
         const mapingBtnArr = Array.from(document.getElementsByClassName('slider__maping-button'));
+        const blockArr = Array.from(document.getElementsByClassName('slider__block'));
     
         const setGridTamplate = () => {
             let blocksQtt = wrapper.children.length;
@@ -18,6 +19,7 @@ export const heroSlider = () => {
             if (show < wrapper.children.length) {
                 rightBtn.parentElement.setAttribute('href', `#slider-block-${show + 2}`);
                 leftBtn.parentElement.setAttribute('href', `#slider-block-${show}`);
+                textTransparent(show);
                 wrapper.setAttribute('show', show + 1);
                 slider.classList.add('slider_on-transition');
                 setTimeout(() => {
@@ -33,6 +35,7 @@ export const heroSlider = () => {
             if (show > 1) {
                 rightBtn.parentElement.setAttribute('href', `#slider-block-${show}`);
                 leftBtn.parentElement.setAttribute('href', `#slider-block-${show - 2}`);
+                textTransparent(show - 2);
                 wrapper.setAttribute('show', show - 1);
                 slider.classList.add('slider_on-transition');
                 setTimeout(() => {
@@ -42,6 +45,16 @@ export const heroSlider = () => {
                     slider.classList.remove('slider_on-transition');
                 }, 500);
             }
+        }
+
+        const textTransparent = (show) => {
+            console.log(show)
+            blockArr.forEach((block) => {
+                block.classList.remove('block_show');
+                setTimeout(() => {
+                    blockArr[show].classList.add('block_show')
+                }, 350)
+            })
         }
     
         const updateMap = () => {
@@ -61,6 +74,7 @@ export const heroSlider = () => {
                     rightBtn.parentElement.setAttribute('href', `#slider-block-${show + 1}`);
                     leftBtn.parentElement.setAttribute('href', `#slider-block-${show - 1}`);
                     wrapper.setAttribute('show', show);
+                    textTransparent(show - 1);
                     slider.classList.add('slider_on-transition');
                     setTimeout(() => {
                         slider.setAttribute('show', show);

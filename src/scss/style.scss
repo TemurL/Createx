@@ -143,10 +143,11 @@ ul {
     aspect-ratio: 1;
     background-image: url('@img/icons/burger-menu.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: relative;
-    transition: 0.3s;
+    transition-duration: 0.3s;
+    transition-property: transform;
     cursor: pointer;
 }
 .mob-menu__button_active {
@@ -328,7 +329,7 @@ ul {
 
 .services {
     background-color: #F4F5F6;
-    background-image: url('@img/bg-image-services-back.png');
+    // background-image: url('@img/bg-image-services-back.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -709,6 +710,9 @@ a.footer__parag:hover {
     border-bottom-right-radius: 0;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.20);
+    border-right: none;
+    color: white;
+    outline: none;
 }
 
 .down-side__button {
