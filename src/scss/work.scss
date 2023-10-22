@@ -34,3 +34,32 @@
     display: block;
     margin: 0 auto;
 }
+
+.project-cards-block__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.project-cards-block__card {
+    height: 440px;
+}
+
+#project-cards-block__card-1 {
+    background-image: url('../img/port-card-back-2.png');
+}
+#project-cards-block__card-2 {
+    background-image: url('../img/port-card-back-1.jpg');
+}
+#project-cards-block__card-3 {
+    background-image: url('../img/port-card-back-3.png');
+}
+#project-cards-block__card-4 {
+    background-image: url('../img/port-card-back-1.jpg');
+}
+#project-cards-block__card-5 {
+    background-image: url('../img/port-card-back-2.png');
+}
+#project-cards-block__card-6 {
+    background-image: url('../img/port-card-back-2.png');
+}

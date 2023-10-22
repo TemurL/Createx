@@ -437,7 +437,7 @@ ul {
     margin: 75px 0;
 }
 
-.portfolio__card {
+.card {
     position: relative;
     flex: 1;
     text-align: center;
@@ -461,41 +461,41 @@ ul {
     background-image: url('@img/port-card-back-3.png');
 }
 
-.portfolio__card-text-content {
+.card__text-content {
     background-color: #FFF;
     position: absolute;
     width: 100%;
-    bottom: -72px;
+    bottom: -75px;
     padding-block: 20px;
     transition: 0.3s;
     box-shadow: 0 0 15px 0px #0000007d;
 }
 
-.portfolio__card:hover .portfolio__card-text-content {
+.card:hover .card__text-content {
     bottom: 0;
 }
-.portfolio__card-text-content_active {
+.card:hover .card__text-content_active {
     bottom: 0;
 }
 
-.portfolio__card-tittle {
+.card__tittle {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 150%;
     margin-block: 0;
 }
-.portfolio__card-parag {
+.card__parag {
     margin-block: 0 24px;
 }
 
-.portfolio__button {
+.card__button {
     color: var(--accent-color);
     border-color: var(--accent-color);
     padding-block: 1rem;
     height: 52px;
 }
 
-.portfolio__button:hover {
+.card__button:hover {
     color: #FFF;
     background-color: var(--accent-color);
 }
