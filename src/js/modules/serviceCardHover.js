@@ -1,6 +1,7 @@
 export const serviceCardHover = () => {
     const cardsArr = Array.from(document.getElementsByClassName('services__card'));
     const katalogBtnArr = Array.from(document.getElementsByClassName('katalog__button'));
+    const listOfProjects = Array.from(document.getElementsByClassName('project-cards-block__card'));
 
     const changeImg = (card) => {
         let imgSrc = card.children[0].getAttribute('src');
@@ -22,6 +23,18 @@ export const serviceCardHover = () => {
         }
     })
 
+    const updateList = () => {
+        let selectedBtn = document.getElementsByClassName('katalog__button_active')[0];
+        let keyWord = selectedBtn.children[1].textContent;
+        listOfProjects.forEach((card) => {
+            card.classList.remove('project-cards-block__card_hide');
+            if (card.children[0].children[1].textContent !== keyWord && keyWord !== 'All Projects') {
+                card.classList.add('project-cards-block__card_hide');
+            }
+        })
+
+    }
+
     cardsArr.forEach((card) => {
         card.addEventListener('mouseover', () => changeImg(card));
         card.addEventListener('mouseout', () => changeImg(card));
@@ -36,6 +49,7 @@ export const serviceCardHover = () => {
             });
             changeImg(btn);
             btn.classList.add('katalog__button_active');
+            updateList();
         });
     })
 }

@@ -53,7 +53,7 @@ export const heroSlider = () => {
                 block.classList.remove('block_show');
                 setTimeout(() => {
                     blockArr[show].classList.add('block_show')
-                }, 350)
+                }, 500)
             })
         }
     

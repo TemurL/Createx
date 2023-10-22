@@ -30,6 +30,9 @@
     .clients + * {
         padding-top: inherit;
     }
+    .project-cards-block__content {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -113,6 +116,17 @@
         grid-column: 1;
     }
 
+    .katalog__filters {
+        flex-direction: column;
+    }
+
+    .services__card-img {
+        width: 35px;
+    }
+
+    .project-cards-block__content {
+        grid-template-columns: 1fr;
+    }
 
     .footer__form {
         margin: 0 auto;
