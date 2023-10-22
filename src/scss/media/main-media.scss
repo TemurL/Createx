@@ -55,6 +55,9 @@
     .mob-menu__button {
         display: block;
     }
+    .hero {
+        background-color: #ffffffa1;
+    }
     .slider__button {
         display: none;
     }
@@ -122,6 +125,15 @@
 
     .services__card-img {
         width: 35px;
+    }
+
+    .we-can-do__block {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .we-can-do__img {
+        flex-basis: 300px;
     }
 
     .project-cards-block__content {

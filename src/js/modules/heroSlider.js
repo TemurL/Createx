@@ -48,7 +48,6 @@ export const heroSlider = () => {
         }
 
         const textTransparent = (show) => {
-            console.log(show)
             blockArr.forEach((block) => {
                 block.classList.remove('block_show');
                 setTimeout(() => {
