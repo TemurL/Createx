@@ -10,6 +10,7 @@
     --black-color: #1E212C;
     --container-padding-inline: 30px;
     --header-height: 92px;
+    --hero-padding-top: 100px;
 }
 html {
     font-family: 'Ubuntu', sans-serif;
@@ -89,7 +90,8 @@ ul {
     font-style: inherit;
 }
 .header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
     background-color: #FFF;
@@ -119,6 +121,9 @@ ul {
     transition: 0.25s;
 }
 .nav__li:hover {
+    color: var(--accent-color);
+}
+.nav__li_active {
     color: var(--accent-color);
 }
 .header__contacts {
@@ -186,6 +191,27 @@ ul {
     margin-bottom: 3rem;
     letter-spacing: 5px;
     text-align: end;
+}
+
+.hero {
+    position: relative;
+    padding-block: calc(var(--hero-padding-top) + var(--header-height));
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.index__hero {
+    padding-block: calc(var(--header-height));
+}
+
+.hero__content {
+    max-width: 50%;
+}
+
+.hero__tittle {
+    text-align: start;
+    margin-bottom: 2rem;
 }
 
 .sec-footer {
@@ -768,4 +794,5 @@ a.footer__parag:hover {
 }
 
 @import './sevrices.scss';
+@import './work.scss';
 @import './media/main-media.scss';

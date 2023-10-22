@@ -1,20 +1,76 @@
-.services-hero {
-    --hero-padding-top: 100px;
-    position: relative;
-    top: calc(var(--header-height) * -1);
+.services__hero {
     background-image: url('../img/SERVICES-background.png');
-    background-position-x: right;
+}
+
+
+.we-can-do {
+    background-image: url('../img/service-block/bg-image(2).png'), url('../img/service-block/bg-image(1).png');
+    background-position-x: left, right;
+    background-position-y: bottom, center;
+    background-repeat: no-repeat;
+    padding-block: 120px;
+}
+
+.we-can-do__block {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 80px;
+    margin-block: 120px;
+}
+.we-can-do__block:first-child {
+    margin-top: 0;
+}
+.we-can-do__block:last-child {
+    margin-bottom: 0;
+}
+
+.we-can-do__block_reverse {
+    flex-direction: row-reverse;
+}
+
+.we-can-do__img {
+    flex-basis: 45%;
+    border-radius: 4px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-block: calc(var(--hero-padding-top) + var(--header-height));
+    background-position: center;
 }
 
-.services-hero__content {
-    max-width: 50%;
+#construction__img {
+    background-image: url('../img/service-block/image.jpg');
+}
+#project-development__img {
+    background-image: url('../img/service-block/image(2).jpg');
+}
+#interior-designn__img {
+    background-image: url('../img/service-block/image(3).jpg');
+}
+#repairs__img {
+    background-image: url('../img/service-block/image(4).jpg');
 }
 
-.services-hero__tittle {
+.we-can-do__text-content {
+    flex-basis: 55%;
+    padding-block: 4.5rem;
+}
+
+.we-can-do__tittle {
+    font-size: 2rem;
     text-align: start;
-    margin-bottom: 2rem;
 }
 
+.we-can-do__parag {
+    margin-block: 2.5rem 3rem;
+}
+
+a.we-can-do__button {
+    display: block;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+a.we-can-do__button:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+}
