@@ -1,0 +1,77 @@
+.about__hero {
+    background-image: url('../img/ABOUT-background.png');
+}
+
+.stat-info__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 100px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-info__card {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat-info__content span {
+    display: block;
+    font-weight: 900;
+    font-size: 2.85rem;
+    margin-block: 20px;
+}
+
+.ceo__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: 60px 100px;
+}
+
+.ceo__text-content {
+    list-style-position: outside;
+    padding: 70px 100px;
+    position: relative;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.ceo__text-content > * {
+    padding-left: 30px;
+}
+
+.ceo__img {
+    border-radius: 4px;
+    position: relative;
+    right: -50px;
+    top: 80px;
+    z-index: -1000;
+}
+
+.ceo__quotation {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.ceo__quotation::marker {
+    content: url('../img/braces.svg');
+    position: relative;
+    display: block;
+    left: -30px;
+}
+
+.ceo__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 60px 60px;
+}
+
+.ceo__footer p,
+.ceo__footer h3 {
+    margin-block: 10px;
+}

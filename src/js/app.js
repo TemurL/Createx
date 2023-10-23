@@ -6,6 +6,7 @@ import { serviceCardHover } from './modules/serviceCardHover.js';
 import { newCard } from './modules/newCard.js';
 import { formBtn } from './modules/formBtn.js';
 import { headerBack } from './modules/headerBack.js';
+import { paralaxCeo } from './modules/paralaxCeo.js';
 
 TLFunc.isWebp()
 
@@ -16,3 +17,4 @@ serviceCardHover();
 newCard();
 formBtn();
 headerBack();
+paralaxCeo();
