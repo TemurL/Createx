@@ -87,3 +87,19 @@
     background-color: #F4F5F6;
     padding-block: 80px;
 }
+
+.world {
+    background-color: #F4F5F6;
+}
+
+.world__content {
+    padding-block: 80px 120px;
+}
+
+.world__map {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 1230px;
+    width: 75vw;
+}
