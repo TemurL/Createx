@@ -33,6 +33,10 @@
     .project-cards-block__content {
         grid-template-columns: 1fr 1fr;
     }
+
+    .team__team-members-block {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -162,6 +166,10 @@
     }
     .footer__go-to-top {
         display: none;
+    }
+
+    .team__team-members-block {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
