@@ -197,3 +197,90 @@
 #Shawn-Edwards {
     background-image: url('../img/team/image.png');
 }
+
+.team__available-positions {
+    text-align: center;
+}
+
+.inline-link {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+.history {
+    background-color: #F4F5F6;
+}
+
+.history__content {
+    padding-block: 60px;
+}
+
+.history__tittle {
+    text-align: start;
+}
+
+.presentation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: 30px;
+    margin-block: 30px;
+    gap: 150px;
+}
+
+.presentation__list {
+    list-style: disc;
+    list-style-position: inside;
+    border-left: 1px dashed #9A9CA5;
+}
+
+.presentation__list-item {
+    position: relative;
+    left: -3.5px;
+    min-width: max-content;
+    padding: 10px 0;
+    margin: 5px 0;
+    color: #9A9CA5;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.presentation__list-item::marker {
+    color: #9A9CA5;
+    display: block;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    left: -10px;
+    transition: 0.3s;
+}
+
+.presentation__list-item_active {
+    color: var(--accent-color);
+}
+.presentation__list-item_active::marker {
+    color: var(--accent-color);
+}
+
+.presentation__slide {
+    position: relative;
+}
+
+.presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+    height: 450px;
+    border-radius: 4px;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.presentation__slide-parag {
+    line-height: 160%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
