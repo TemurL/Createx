@@ -207,12 +207,50 @@
     color: var(--accent-color);
 }
 
+.inline-link:hover {
+    text-decoration: none;
+}
+
 .history {
-    background-color: #F4F5F6;
+    background-color: var(--history-background-color, #F4F5F6);
 }
 
 .history__content {
     padding-block: 60px;
+}
+
+.history__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history__button {
+    width: 48px;
+    aspect-ratio: 1;
+    margin-inline: 5px;
+    border-radius: 50%;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.history__button.prev {
+    background-image: url('../img/presentation/controls/prev.svg');
+}
+.history__button.next {
+    background-image: url('../img/presentation/controls/next.svg');
+}
+.history__button.prev:hover {
+    background-image: url('../img/presentation/controls/prev-white.svg');
+}
+.history__button.next:hover {
+    background-image: url('../img/presentation/controls/next-white.svg');
+}
+.history__button:hover {
+    background-color: #ff5930;
 }
 
 .history__tittle {
@@ -264,18 +302,67 @@
     color: var(--accent-color);
 }
 
-.presentation__slide {
+.presentation__slides-sec {
     position: relative;
 }
 
+.presentation__slides-sec::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F5F600;
+    transition: 0.5s;
+}
+
+.presentation__slides-sec_on-transition::after {
+    background-color: #f4f5f6;
+}
+
+.presentation__slide {
+    display: none;
+}
+
+.presentation__slide_active {
+    display: block;
+}
+
 .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
-    height: 450px;
+    height: 550px;
     border-radius: 4px;
     background-position-y: top;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.presentation__slide:nth-child(1) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+}
+.presentation__slide:nth-child(2) .presentation__slide-img {
+    background-image: url('../img/port-card-back-5.png');
+}
+.presentation__slide:nth-child(3) .presentation__slide-img {
+    background-image: url('../img/port-card-back-6.png');
+}
+.presentation__slide:nth-child(4) .presentation__slide-img {
+    background-image: url('../img/slider/construction.jpeg');
+}
+.presentation__slide:nth-child(5) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+}
+.presentation__slide:nth-child(6) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+}
+.presentation__slide:nth-child(7) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+}
+.presentation__slide:nth-child(8) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
+}
+.presentation__slide:nth-child(9) .presentation__slide-img {
+    background-image: url('../img/presentation/image-1.jpg');
 }
 
 .presentation__slide-parag {

@@ -7,6 +7,7 @@ import { newCard } from './modules/newCard.js';
 import { formBtn } from './modules/formBtn.js';
 import { headerBack } from './modules/headerBack.js';
 import { paralaxCeo } from './modules/paralaxCeo.js';
+import { presentation } from './modules/presentation.js';
 
 TLFunc.isWebp()
 
@@ -18,3 +19,4 @@ newCard();
 formBtn();
 headerBack();
 paralaxCeo();
+presentation();

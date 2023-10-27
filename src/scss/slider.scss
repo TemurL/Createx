@@ -97,9 +97,7 @@
     scroll-behavior: smooth;
     overflow: hidden;
 }
-// .slider__wrapper::-webkit-scrollbar {
-//     width: 0;
-// }
+
 .slider__wrapper > * {
     flex-grow: 1;
 }
@@ -111,9 +109,7 @@
 .block_show {
     color: #ffffff;
 }
-.block::-webkit-scrollbar {
-    height: 0;
-}
+
 .block__content {
     width: min-content;
     transition: 0.35s;
