@@ -1,5 +1,5 @@
 .slider {
-    --buttons-position: -5rem;
+    --buttons-position: 10px;
     position: relative;
     background-color: #000000ab;
     background-blend-mode: overlay;
@@ -9,6 +9,7 @@
     padding-block: 220px 120px;
     transition-property: background-color;
     transition-duration: 0.5s;
+    overflow: hidden;
 }
 
 .slider[bgImg="1"] {
@@ -35,6 +36,7 @@
     justify-content: space-between;
     gap: 100px;
     position: relative;
+    padding-inline: 65px;
 }
 
 .slider__prev-button,
@@ -48,6 +50,8 @@
     transition: 0.3s;
     cursor: pointer;
     z-index: 30;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slider__next-button:hover,
@@ -57,9 +61,11 @@
 
 .slider__next-button {
     right: var(--buttons-position);
+    background-image: url('../img/presentation/controls/next.svg');
 }
 .slider__prev-button {
     left: var(--buttons-position);
+    background-image: url('../img/presentation/controls/prev.svg');
 }
 
 .slider__maping-button {

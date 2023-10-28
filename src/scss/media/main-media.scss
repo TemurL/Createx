@@ -1,9 +1,24 @@
 @media screen and (min-width: 1500px) {
+    .slider { 
+        --buttons-position: -7rem;
+    }
 
+    .slider__container {
+        padding-inline: 30px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
     .header__contacts {
+        display: none;
+    }
+
+    .slider__container {
+        padding-inline: 30px;
+    }
+
+    .slider__prev-button,
+    .slider__next-button {
         display: none;
     }
     .ask-mail__input {
@@ -34,6 +49,12 @@
     }
     html {
         font-size: 12px;
+    }
+    .slider__map {
+        display: none;
+    }
+    .slide {
+        width: 100%;
     }
     .header {
         background-color: #FFF;

@@ -4,6 +4,7 @@ export const indexSlider = () => {
     const nextBtn = document.getElementsByClassName('slider__next-button')[0];
     const prevBtn = document.getElementsByClassName('slider__prev-button')[0];
     const mapBtnArr = Array.from(document.getElementsByClassName('slider__maping-button'));
+    const sliderContainer = document.getElementsByClassName('index__hero')[0];
 
     const sliderModif = 'slider_on-transition';
     const slideModif = 'slide_active';
@@ -84,5 +85,49 @@ export const indexSlider = () => {
             mapBtnClick(activeSlide, clickedBtnIndex);   
         })
     })
+
+    sliderContainer.addEventListener('touchstart', handleTouchStart, false);
+    sliderContainer.addEventListener('touchmove', handleTouchMove, false);
+    let xDown = null;
+    let yDown = null;
+        
+    function getTouches(evt) {
+        return evt.touches
+    }
+    
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    };
+        
+    function handleTouchMove(evt) {
+            if ( ! xDown || ! yDown ) {
+            return;
+        }
+            
+        let xUp = evt.touches[0].clientX;
+        let yUp = evt.touches[0].clientY;
+            
+        let xDiff = xDown - xUp;
+        let yDiff = yDown - yUp;
+            
+        if ( Math.abs(xDiff) > Math.abs(yDiff) ) {/* отлавливаем разницу в движении */
+            if ( xDiff > 0 ) {
+                nextBtn.click();
+            } else {
+                prevBtn.click();
+            }
+        } else {
+            if ( yDiff > 0 ) {
+            /* swipe вверх */
+            } else {
+            /* swipe вниз */
+            }
+        }
+        /* свайп был, обнуляем координаты */
+        xDown = null;
+        yDown = null;
+    };
 
 }

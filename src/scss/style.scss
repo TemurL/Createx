@@ -203,7 +203,8 @@ ul {
 }
 
 .index__hero {
-    padding-block: calc(var(--header-height));
+    padding-block-start: calc(var(--header-height));
+    padding-block-end: 0;
 }
 
 @import './indexSlider.scss';
