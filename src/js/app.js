@@ -1,5 +1,4 @@
 import * as TLFunc from './modules/functions.js';
-import { heroSlider } from './modules/heroSlider.js';
 import { mobMenu } from './modules/mobMenu.js';
 import { portfolioCard } from './modules/portfolioCard.js';
 import { serviceCardHover } from './modules/serviceCardHover.js';
@@ -8,10 +7,11 @@ import { formBtn } from './modules/formBtn.js';
 import { headerBack } from './modules/headerBack.js';
 import { paralaxCeo } from './modules/paralaxCeo.js';
 import { presentation } from './modules/presentation.js';
+import { indexSlider } from './modules/indexSlider.js';
 
 TLFunc.isWebp()
 
-heroSlider();
+indexSlider();
 mobMenu();
 serviceCardHover();
 // portfolioCard();

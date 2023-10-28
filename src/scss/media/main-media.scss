@@ -1,21 +1,10 @@
 @media screen and (min-width: 1500px) {
-    .slider {
-        --buttons-padding: 0;
-    }
+
 }
 
 @media screen and (max-width: 1080px) {
     .header__contacts {
         display: none;
-    }
-    .slider {
-        --buttons-padding: 1rem;
-    }
-    .slider__map {
-        display: none;
-    }
-    .slider__wrapper {
-        padding-block: 50px;
     }
     .ask-mail__input {
         width: 17vw;
@@ -62,12 +51,7 @@
     .hero {
         background-color: #ffffffa1;
     }
-    .slider__button {
-        display: none;
-    }
-    .slider__wrapper {
-        padding-block: 50px 0;
-    }
+
     .block {
         padding-block: 1rem;
     }

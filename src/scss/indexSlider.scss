@@ -1,0 +1,132 @@
+.slider {
+    --buttons-position: -5rem;
+    position: relative;
+    background-color: #000000ab;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 220px 120px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.slider[bgImg="1"] {
+    background-image: url('../img/slider/bg-image-HERO.jpg');
+}
+.slider[bgImg="2"] {
+    background-image: url('../img/slider/construction.jpeg');
+}
+.slider[bgImg="3"] {
+    background-image: url('../img/slider/image-second-back-HERO.png');
+}
+.slider[bgImg="4"] {
+    background-image: url('../img/slider/image-hero-forth.jpg');
+}
+
+.slider_on-transition {
+    background-color: black;
+}
+
+.slider__container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+}
+
+.slider__prev-button,
+.slider__next-button {
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ffffff7d;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.slider__next-button:hover,
+.slider__prev-button:hover {
+    background-color: #fff;
+}
+
+.slider__next-button {
+    right: var(--buttons-position);
+}
+.slider__prev-button {
+    left: var(--buttons-position);
+}
+
+.slider__maping-button {
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    width: 175px;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 150%;
+    border-bottom: 2px solid #ffffff86;
+    color: #ffffff86;
+    margin-inline-end: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.slider__maping-button_active {
+    border-color: #fff;
+    color: #fff;
+}
+
+.slide {
+    position: relative;
+    display: none;
+    width: 70%;
+    left: 0;
+    overflow: scroll;
+    height: clamp(400px, 30vh, 1300px);
+    margin-inline-end: auto;
+    z-index: 10;
+    animation-duration: 0.31s;
+}
+
+
+@keyframes fadeOut {
+    to {
+        transform: translateX(-150px);
+        opacity: 0%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        transform: translateX(150px);
+        opacity: 0%;
+    }
+}
+@keyframes fadeOutRevers {
+    to {
+        transform: translateX(150px);
+        opacity: 0%;
+    }
+}
+@keyframes fadeInRevers {
+    from {
+        transform: translateX(-150px);
+        opacity: 0%;
+    }
+}
+
+.slide_active {
+    display: block;
+}
+
+.slide__tittle, 
+.slide__parag {
+    color: #fff;
+    text-align: start;
+}

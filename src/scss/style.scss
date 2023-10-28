@@ -206,14 +206,7 @@ ul {
     padding-block: calc(var(--header-height));
 }
 
-.hero__content {
-    max-width: 50%;
-}
-
-.hero__tittle {
-    text-align: start;
-    margin-bottom: 2rem;
-}
+@import './indexSlider.scss';
 
 .sec-footer {
     display: flex;
@@ -229,8 +222,6 @@ ul {
     display: inline;
     min-width: max-content;
 }
-
-@import './slider.scss';
 
 .promo-video__content {
     text-align: center;
