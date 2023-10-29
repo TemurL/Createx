@@ -313,20 +313,6 @@
     top: 50px;
 }
 
-// .presentation__slides-sec::after {
-//     content: '';
-//     position: absolute;
-//     inset: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #F4F5F600;
-//     transition: 0.5s;
-// }
-
-// .presentation__slides-sec_on-transition::after {
-//     background-color: #f4f5f6;
-// }
-
 .presentation__slide {
     display: none;
 }
@@ -376,5 +362,82 @@
     line-height: 160%;
     font-size: 1rem;
     margin-top: 1rem;
+}
+
+// ==================================
+// AVAILABLE POSITIONS 
+// ==============
+
+.available-positions__hero {
+    background-color: #F4F5F6;
+    background-image: url('../img/image-available-positions-bg.png');
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: var(--header-height);
+    background-blend-mode: inherit;
+}
+
+.vacant-positions__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+    padding-block: 100px;
+}
+
+.vacant-positions__list {
+    flex-grow: 1;
+}
+
+.vacant-positions__position {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 40px;
+    border-radius: 4px;
+    border: 1px solid #E5E8ED;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    gap: 2rem;
+}
+
+.vacant-positions__position:hover {
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.vacant-positions__position-city-hours {
+    color: var(--light-gray-color);
+    font-size: 0.87rem;
+}
+
+.vacant-positions__position-city-hours img {
+    position: relative;
+    top: 3px;
+    margin-inline-end: 5px;
+}
+
+.vacant-positions__position-tittle {
+    font-size: 1.25rem;
+    color: var(--black-color);
+    line-height: 150%;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.vacant-positions__send-cv {
+    flex-basis: 400px;
+}
+
+.vacant-positions__send-cv-tittle {
+    font-size: 1.75rem;
+    color: var(--black-color);
+    font-weight: 700;
+}
+
+
+.vacant-positions__send-cv-button {
+    display: inline-block;
+    margin-inline-end: 24px;
+    margin-block-end: 24px;
 }
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./html/head.html', {
+        'tittle': 'About Us'
+    })
+    <body class="body">
+        <div class="wrapper">
+            @@include('./html/header.html')
+            <main class="main" id="main">
+                <section class="hero available-positions__hero">
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="tittle hero__tittle">AVAILABLE <br> POSITIONS</div>
+                            <p class="parag hero__parag">
+                                Build your career with Createx Construction Bureau.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="vacant-positions">
+                    <div class="container">
+                        <div class="vacant-positions__content">
+                            <div class="vacant-positions__list">
+                                <div class="vacant-positions__position">
+                                    <div class="vacant-positions__position-left-side">
+                                        <span class="vacant-positions__position-city-hours"><img src="@img/icons/Pin.svg" alt=""> New York | <img src="@img/icons/Clock.svg" alt=""> Full Time</span>
+                                        <p class="vacant-positions__position-tittle">Heavy Equipment Operator</p>
+                                    </div>
+                                    <div class="vacant-positions__position-right-side">
+                                        <button class="button transparent-button we-can-do__button">apply now</button>
+                                    </div>
+                                </div>
+                                <div class="vacant-positions__position">
+                                    <div class="vacant-positions__position-left-side">
+                                        <span class="vacant-positions__position-city-hours"><img src="@img/icons/Pin.svg" alt=""> San Francisco | <img src="@img/icons/Clock.svg" alt=""> Full Time</span>
+                                        <p class="vacant-positions__position-tittle">Financial Compliance Analyst</p>
+                                    </div>
+                                    <div class="vacant-positions__position-right-side">
+                                        <a class="button transparent-button we-can-do__button">apply now</a>
+                                    </div>
+                                </div>
+                                <div class="vacant-positions__position">
+                                    <div class="vacant-positions__position-left-side">
+                                        <span class="vacant-positions__position-city-hours"><img src="@img/icons/Pin.svg" alt=""> New Jersey | <img src="@img/icons/Clock.svg" alt=""> Full Time</span>
+                                        <p class="vacant-positions__position-tittle">Project Manager - Buildings</p>
+                                    </div>
+                                    <div class="vacant-positions__position-right-side">
+                                        <a class="button transparent-button we-can-do__button">apply now</a>
+                                    </div>
+                                </div>
+                                <div class="vacant-positions__position">
+                                    <div class="vacant-positions__position-left-side">
+                                        <span class="vacant-positions__position-city-hours"><img src="@img/icons/Pin.svg" alt=""> New York | <img src="@img/icons/Clock.svg" alt=""> Part Time</span>
+                                        <p class="vacant-positions__position-tittle">Environment Specialist</p>
+                                    </div>
+                                    <div class="vacant-positions__position-right-side">
+                                        <a class="button transparent-button we-can-do__button">apply now</a>
+                                    </div>
+                                </div>
+                                <div class="vacant-positions__position">
+                                    <div class="vacant-positions__position-left-side">
+                                        <span class="vacant-positions__position-city-hours"><img src="@img/icons/Pin.svg" alt=""> New York | <img src="@img/icons/Clock.svg" alt=""> Full Time</span>
+                                        <p class="vacant-positions__position-tittle">Accountant</p>
+                                    </div>
+                                    <div class="vacant-positions__position-right-side">
+                                        <a class="button transparent-button we-can-do__button">apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vacant-positions__send-cv">
+                                <p class="vacant-positions__send-cv-tittle">Didn’t find what you were looking for?</p>
+                                <p class="parag vacant-positions__parag">Send your CV or subscribe to our newsletter to receive information about new vacancies.</p>
+                                <button class="button transparent-button we-can-do__button vacant-positions__send-cv-button">subscribe</button>
+                                <button class="button filled-button vacant-positions__send-cv-button">send cv</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('./html/footer.html')
+            <script src="js/app.min.js"></script>
+        </div>
+    </body>
+</html>

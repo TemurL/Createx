@@ -65,12 +65,12 @@
     margin-block: 2.5rem 3rem;
 }
 
-a.we-can-do__button {
+.we-can-do__button {
     display: block;
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
-a.we-can-do__button:hover {
+.we-can-do__button:hover {
     color: #fff;
     background-color: var(--accent-color);
 }
