@@ -4,13 +4,13 @@
             <from class="footer__form" id="footer__form" action="" method="get">
                 <p class="footer__tittle">A quick way to discuss details</p>
                 <label class="label footer__label" for="name">Name*</label>
-                <input class="input footer__input" type="text" id="name" placeholder="Your name">
+                <input class="input footer__input" type="text" id="name" placeholder="Your name" autocomplete="on">
                 <label class="label footer__label" for="phone">Phone*</label>
-                <input class="input footer__input" type="tel" id="phone" placeholder="Your phone number">
+                <input class="input footer__input" type="tel" id="phone" placeholder="Your phone number" autocomplete="on">
                 <label class="label footer__label" for="email">Email</label>
-                <input class="input footer__input" type="email" id="email" placeholder="Your working email">
+                <input class="input footer__input" type="email" id="email" placeholder="Your working email" autocomplete="on">
                 <label class="label footer__label" for="message">Message</label>
-                <input class="input footer__input" type="text" placeholder="Your message">
+                <input class="input footer__input" type="text" id="message" placeholder="Your message">
                 <input type="checkbox" id="agree" name="">
                 <label class="label footer__label" for="agree">I agree to receive communications from Createx <br> Construction Bureau.</label>
                 <button class="button filled-button footer__button" id="footer__form-btn" form="footer__form" type="submit" disabled>send request</button>
@@ -34,7 +34,7 @@
                 <div class="down-side__top-right">
                     <div class="tittle down-side__tittle">Let’s stay in touch</div>
                     <div class="down-side__subsribe">
-                        <input type="email" class="input down-side__input" placeholder="You email address">
+                        <input type="email" class="input down-side__input" name="Email" placeholder="You email address" autocomplete="on">
                         <button class="button filled-button down-side__button">subscribe</button>
                     </div>
                     <p class="parag footer__parag parag_small">*Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.</p>

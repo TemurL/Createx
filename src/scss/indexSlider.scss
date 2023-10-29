@@ -95,7 +95,9 @@
     width: 70%;
     left: 0;
     overflow: scroll;
-    height: clamp(400px, 30vh, 1300px);
+    min-height: max-content;
+    height: 45vh;
+    max-height: 1400px;
     margin-inline-end: auto;
     z-index: 10;
     animation-duration: 0.31s;
@@ -135,4 +137,17 @@
 .slide__parag {
     color: #fff;
     text-align: start;
+}
+
+.slide__tittle {
+    font-size: 4.5rem;
+}
+
+.slide__parag {
+    margin-block: 50px;
+}
+
+.slide__button {
+    margin-inline-end: 24px;
+    margin-block-end: 24px;
 }

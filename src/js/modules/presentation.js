@@ -28,7 +28,7 @@ export const presentation = () => {
         setTimeout(() => {
             changeSlide(i)
             slidesContainer.classList.remove(slidesContainerModif)
-        }, 450)
+        }, 350)
     }
 
     const clickForListItem = (li) => {

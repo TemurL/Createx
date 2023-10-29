@@ -1,4 +1,5 @@
 export const indexSlider = () => {
+    if (document.title !== 'Createx') return
     const slider = document.getElementsByClassName('slider')[0];
     const slideArr = Array.from(document.getElementsByClassName('slide'));
     const nextBtn = document.getElementsByClassName('slider__next-button')[0];

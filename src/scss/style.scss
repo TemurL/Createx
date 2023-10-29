@@ -202,6 +202,10 @@ ul {
     background-blend-mode: overlay;
 }
 
+.hero__tittle {
+    text-align: start;
+}
+
 .index__hero {
     padding-block-start: calc(var(--header-height));
     padding-block-end: 0;

@@ -21,6 +21,13 @@
     .slider__next-button {
         display: none;
     }
+
+    .slide {
+        width: 100%;
+    }
+    .slide__tittle {
+        font-size: 3rem;
+    }
     .ask-mail__input {
         width: 17vw;
     }
@@ -50,11 +57,11 @@
     html {
         font-size: 12px;
     }
-    .slider__map {
-        display: none;
+    .slider {
+        padding-top: calc(var(--header-height) + 50px);
     }
-    .slide {
-        width: 100%;
+    .slider__maping-button {
+        width: 50px;
     }
     .header {
         background-color: #FFF;
