@@ -81,7 +81,10 @@
         font-size: 12px;
     }
     .slider {
-        padding-top: calc(var(--header-height) + 50px);
+        padding-block: 50px;
+    }
+    .slider__container {
+        gap: 20px;
     }
     .slider__maping-button {
         width: 50px;
@@ -229,6 +232,13 @@
 
     .hero__content {
         width: 100%;
+    }
+    .slider {
+        min-height: min-content;
+        height: calc(100svh - var(--header-height));
+    }
+    .slide__parag {
+        margin-block: 24px;
     }
 }
 

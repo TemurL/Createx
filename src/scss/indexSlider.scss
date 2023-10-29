@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-block: 220px 120px;
+    padding-block: 120px;
     transition-property: background-color;
     transition-duration: 0.5s;
     overflow: hidden;
@@ -35,6 +35,7 @@
     align-items: stretch;
     justify-content: space-between;
     gap: 100px;
+    height: 100%;
     position: relative;
     padding-inline: 65px;
 }
@@ -72,7 +73,7 @@
     position: relative;
     display: inline-block;
     text-align: start;
-    width: 175px;
+    width: 168px;
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 150%;
@@ -95,9 +96,9 @@
     width: 70%;
     left: 0;
     overflow: auto;
-    min-height: max-content;
-    height: 45vh;
-    max-height: 1400px;
+    // min-height: 490px;
+    // height: 100%;
+    // max-height: 1400px;
     margin-inline-end: auto;
     z-index: 10;
     animation-duration: 0.31s;
