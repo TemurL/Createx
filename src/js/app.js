@@ -8,6 +8,7 @@ import { headerBack } from './modules/headerBack.js';
 import { paralaxCeo } from './modules/paralaxCeo.js';
 import { presentation } from './modules/presentation.js';
 import { indexSlider } from './modules/indexSlider.js';
+import { katalogCollaps } from './modules/katalogCollaps.js';
 
 TLFunc.isWebp()
 
@@ -20,3 +21,4 @@ formBtn();
 headerBack();
 paralaxCeo();
 presentation();
+katalogCollaps();
