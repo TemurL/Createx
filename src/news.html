@@ -7,9 +7,49 @@
         <div class="wrapper">
             @@include('./html/header.html')
             <main class="main">
+                <div class="hero news__hero">
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="tittle hero__tittle">NEWS</div>
+                            <p class="parag hero__parag">Stay tuned with our news, expert tips and articles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories news__categories">
+                    <div class="container">
+                        <div class="categories__content">
+                            <div class="tittle categories__tittle">Categories</div>
+                            <ul class="categories categories__ul">
+                                <li class="categories__li categories__li_active">All News</li>
+                                <li class="categories__li">Company News</li>
+                                <li class="categories__li">Innovation</li>
+                                <li class="categories__li">Industry News</li>
+                                <li class="categories__li">Expert Tips</li>
+                                <li class="categories__li">Marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="newspaper">
+                    <div class="container">
+                        <!-- stoped here -->
+                    </div>
+                </div>
             </main>
             @@include('./html/footer.html')
             <script src="js/app.min.js"></script>
         </div>
     </body>
 </html>
+
+@@include('./html/newsCard.html', {
+    'tittle': 'How to Build Climate Change-Resilient Infrastructure',
+    'kategory': 'Industry News',
+    'id': '001',
+    'date': 'June 24, 2020',
+    'commentsQtt': '4',
+    'parentclass': 'news',
+    'img-path': "@img/news-card/image__001.jpg",
+    'preview-parag': 'Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...',
+    'link': './news.html'
+})
