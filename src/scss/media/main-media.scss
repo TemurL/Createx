@@ -105,6 +105,10 @@
     .hero {
         background-color: #ffffffa1;
     }
+    .hero__parag {
+        color: var(--black-color);
+        text-shadow: 2px 0px 15px white;
+    }
     .available-positions__hero {
         background-blend-mode: overlay;
     }
@@ -180,6 +184,7 @@
         border-top: 2px solid var(--accent-color);
     }
 
+
     .katalog__collaps-button {
         display: block;
         font-weight: 900;
@@ -188,6 +193,14 @@
         padding: 1.3rem;
         text-align: start;
         position: relative;
+    }
+
+    .katalog__button {
+        border: 1px solid transparent;
+    }
+
+    .katalog__button:hover {
+        border: 1px solid var(--accent-color);
     }
 
     .katalog__collaps-button::after {
@@ -200,6 +213,7 @@
         background-image: url('../img/icons/Down-chevron.svg');
         background-size: cover;
         background-position: center;
+        transition: 0.3s;
     }
 
     .katalog__content {
@@ -211,6 +225,10 @@
 
     .katalog__content_open {
         grid-template-rows: 1fr;
+    }
+
+    .katalog__collaps-button_open::after {
+        rotate: 180deg;
     }
 
     .katalog__filters {

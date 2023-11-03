@@ -96,11 +96,9 @@
     width: 70%;
     left: 0;
     overflow: auto;
-    // min-height: 490px;
-    // height: 100%;
-    // max-height: 1400px;
     margin-inline-end: auto;
     z-index: 10;
+    animation-name: fadeInRevers;
     animation-duration: 0.31s;
 }
 
