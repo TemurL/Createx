@@ -32,3 +32,62 @@
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
+
+.newspaper {
+    margin-bottom: 60px;
+}
+
+.newspaper__template {
+    display: none;
+}
+
+.newspaper__page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    animation-name: fadeInRevers;
+    animation-duration: 0.5s;
+}
+
+#new-card_001 {
+    height: 540px;
+}
+
+#new-card_003 {
+    grid-column: auto;
+}
+
+// .newspaper__new-card {
+//     display: none;
+// }
+
+// .newspaper__new-card_visible {
+//     display: flex;
+// }
+
+.newspaper__page {
+    display: none;
+}
+.newspaper__page_visible {
+    display: grid;
+}
+
+
+.newspaper__map {
+    text-align: center;
+}
+
+.newspaper__maping-button {
+    // font-size: 2rem;
+    font-weight: 900;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.newspaper__maping-button_active {
+    color: var(--accent-color);
+}

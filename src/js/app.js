@@ -9,6 +9,8 @@ import { paralaxCeo } from './modules/paralaxCeo.js';
 import { presentation } from './modules/presentation.js';
 import { indexSlider } from './modules/indexSlider.js';
 import { katalogCollaps } from './modules/katalogCollaps.js';
+import { newspaper } from './modules/newspaper.js';
+import { newspaperMapingBtns } from './modules/newspaperMapingBtns.js';
 
 TLFunc.isWebp()
 
@@ -22,3 +24,5 @@ headerBack();
 paralaxCeo();
 presentation();
 katalogCollaps();
+newspaper();
+newspaperMapingBtns();
