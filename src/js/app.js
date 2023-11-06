@@ -15,6 +15,7 @@ import { modal } from './modules/modal.js';
 
 TLFunc.isWebp()
 
+modal();
 indexSlider();
 mobMenu();
 serviceCardHover();
@@ -28,4 +29,3 @@ katalogCollaps();
 // Qqt of cards on a single page {newspaper(=> n )}
 newspaper(2);
 newspaperMapingBtns();
-modal();

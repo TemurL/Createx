@@ -478,6 +478,27 @@
     border-radius: 10px;
 }
 
+#CV-modal .modal__content {
+    top: 40px;
+    max-width: 1000px;
+}
+
+#CV-modal input[type="file"] {
+    display: none;
+}
+
+#CV-modal label[for="file"] {
+    display: inline-flex;
+    align-items: center;
+    margin-block: 12px;
+    cursor: pointer;
+}
+
+#CV-modal label[for="file"]::before {
+    content: url('../img/icons/Attach.svg');
+    margin-inline-end: 10px;
+}
+
 .modal__content hr {
     background-color: #9a9ca580;
     border: none;
@@ -493,6 +514,13 @@
     width: 100%;
     margin-top: 10px;
 }
+
+.modal__textaria {
+    resize: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 
 .modal__exit-button {
     position: absolute;

@@ -2,16 +2,19 @@ export const modal = () => {
     if (document.title !== 'About Us') return
 
 
-    const subBtn = document.querySelector('.we-can-do__button.vacant-positions__send-cv-button');
-
+    const subBtn = document.getElementById('subscribe-button');
+    const CVBtn = document.getElementById('send-cv-button');
+    let subModal = document.getElementById('subscribe-modal');
+    let CVModal = document.getElementById('CV-modal');
 
     if (!subBtn) return
     const modalModif = 'modal_active';
     const modifScrollLock = 'scroll-lock';
 
+    
 
-    const modalAct = () => {
-        let modal = document.getElementsByClassName('modal')[0]
+
+    const modalAct = (modal) => {
         if (!modal.classList.contains(modalModif)) {
             modal.style.animationName = 'modalIn';
             modal.classList.add(modalModif);
@@ -26,17 +29,10 @@ export const modal = () => {
         document.querySelector('html').classList.toggle(modifScrollLock);
     }
 
-    subBtn.addEventListener('click', modalAct);
-    setTimeout(() => {
-        document.querySelector('.modal__exit-button').addEventListener('click', modalAct);
-    }, 1000);
+    subBtn.addEventListener('click', () => modalAct(subModal));
+    CVBtn.addEventListener('click', () => modalAct(CVModal));
 
+    let closeBtn = document.querySelectorAll('.modal__exit-button');
 
-
-    // Uncomment if modal window needs to de shown automaticly every 20 sec
-    // setInterval(() => {
-    //     let modal = document.getElementsByClassName('modal')[0]
-    //     if (modal.classList.contains(modalModif)) return
-    //     modalAct();
-    // }, 20000);
+    closeBtn.forEach(btn => btn.addEventListener('click', () => modalAct(btn.parentElement.parentElement)));
 }
