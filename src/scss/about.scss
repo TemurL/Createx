@@ -441,3 +441,71 @@
     margin-block-end: 24px;
 }
 
+.modal {
+    inset: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.53);
+    z-index: 10000;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    animation-name: modalIn;
+    animation-duration: 0.5s;
+    padding-inline: 15px;
+}
+
+.modal_active {
+    display: flex;
+}
+
+@keyframes modalIn {
+    0% {
+        opacity: 0;
+    }
+}
+@keyframes modalOut {
+    100% {
+        opacity: 0;
+    }
+}
+
+.modal__content {
+    position: relative;
+    top: 20vh;
+    width: max-content;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.modal__content hr {
+    background-color: #9a9ca580;
+    border: none;
+    height: 1px;
+}
+
+.modal__tittle {
+    font-size: 1.75rem;
+    margin-block: 1.5rem;
+}
+
+.modal__button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal__exit-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    aspect-ratio: 1;
+    background-image: url('../img/icons/Cross.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+}
+

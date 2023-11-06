@@ -1,4 +1,5 @@
 export const newspaperMapingBtns = () => {
+    if (document.title != 'News') return
     const map = document.getElementsByClassName('newspaper__map')[0];
     let pages = document.getElementsByClassName('newspaper__page');
     const categortBtnsArr = Array.from(document.getElementsByClassName('categories__li'));

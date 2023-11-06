@@ -80,5 +80,19 @@
             @@include('./html/footer.html')
             <script src="js/app.min.js"></script>
         </div>
+        <div class="modal">
+            <div class="modal__content">
+                <div class="tittle modal__tittle">Subscribe to our newsletter</div>
+                <form action="" method="get">
+                    <label class="label modal__label" for="name">Name*</label>
+                    <input class="input modal__input" type="text" id="name" placeholder="Your name">
+                    <label class="label modal__label" for="email">Email*</label>
+                    <input class="input modal__input" type="email" id="email" placeholder="Your working email">
+                    <hr>
+                    <button class="button filled-button modal__button">send</button>
+                </form>
+                <button class="modal__exit-button"></button>
+            </div>
+        </div>
     </body>
 </html>
