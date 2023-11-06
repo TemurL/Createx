@@ -1,4 +1,4 @@
-export const newspaper = () => {
+export const newspaper = (cardsQttOnPage) => {
     if (document.title != 'News') return
     const newspaperContent = document.getElementsByClassName('newspaper__content')[0];
     const categoryBtnsArr = Array.from(document.getElementsByClassName('categories__li'));
@@ -15,7 +15,7 @@ export const newspaper = () => {
             changeAtciveCategory(btn);
             resetPages();
             updateCardsList(btn);
-            moveToNewPage();
+            moveToNewPage(cardsQttOnPage);
         })
     })
 
@@ -44,8 +44,8 @@ export const newspaper = () => {
         newspaperContent.appendChild(newPage);
     }
 
-    const moveToNewPage = () => {
-        let cardsQttOnPage = 4;
+    const moveToNewPage = (cardsQttOnPage) => {
+        // cardsQttOnPage = 2;
         while (newsPagesArr[0].children.length > cardsQttOnPage) {
             console.log('start');
             let newPage = document.createElement('div');
@@ -55,23 +55,16 @@ export const newspaper = () => {
                     newPage.appendChild(newsPagesArr[0].lastChild);
                 }
             } else {
-                for (let i = 0; i <= (newsPagesArr[0].children.length + 1) - cardsQttOnPage; i++) {
+                for (let i = 0; i < (newsPagesArr[0].children.length + 1) - cardsQttOnPage; i++) {
                     newPage.appendChild(newsPagesArr[0].lastChild);
                     console.log(newsPagesArr[0].children.length);
                 }
             }
-
-            // if (newsPagesArr[0].children.length === 3) {
-            //     newPage.appendChild(newsPagesArr[0].lastChild);
-            // } else {
-            //     newPage.appendChild(newsPagesArr[0].lastChild);
-            //     newPage.appendChild(newsPagesArr[0].lastChild);
-            // }
             newspaperContent.appendChild(newPage);
             console.log('done');
         }
     }
 
     updateCardsList(categoryBtnsArr[0]);
-    moveToNewPage();
+    moveToNewPage(cardsQttOnPage);
 }

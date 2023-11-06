@@ -48,6 +48,7 @@ ul {
     color: var(--accent-color);
 }
 .button {
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 1rem;
@@ -660,6 +661,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: inset 0px 11px 25px -16px rgba(0, 0, 0, 0.468);
 }
 .footer__form {
     display: block;

@@ -20,6 +20,7 @@ export const newspaperMapingBtns = () => {
 
     const updateMapingBtn = () => {
         map.innerHTML = '';
+        if (pages.length === 1) return
         for (let i = 0; i < pages.length; i++) {
             let newBtn = document.createElement('button');
             newBtn.classList.add('newspaper__maping-button');

@@ -24,5 +24,5 @@ headerBack();
 paralaxCeo();
 presentation();
 katalogCollaps();
-newspaper();
+newspaper(4);
 newspaperMapingBtns();
