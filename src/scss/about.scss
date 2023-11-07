@@ -441,6 +441,10 @@
     margin-block-end: 24px;
 }
 
+.available-positions__core-values {
+    margin-bottom: 120px;
+}
+
 .modal {
     inset: 0;
     position: fixed;
@@ -452,6 +456,8 @@
     animation-name: modalIn;
     animation-duration: 0.5s;
     padding-inline: 15px;
+    overflow-y: scroll;
+    padding-bottom: 40px;
 }
 
 .modal_active {

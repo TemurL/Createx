@@ -76,14 +76,41 @@
                         </div>
                     </div>
                 </section>
+                <section class="core-values available-positions__core-values">
+                    <div class="container">
+                        <div class="core-values__content">
+                            <div class="tittle core-values__tittle">Employee benefits</div>
+                            <p class="parag core-values__parag">There’s always room for talent.</p>
+                            <div class="core-values__cards-block">
+                                <div class="core-values__card">
+                                    <img class="core-values__card-img" src="@img/icons/ic-brain.svg" alt="">
+                                    <p class="core-values__card-tittle">Training</p>
+                                    <p class="parag core-values__card-parag">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+                                </div>
+                                <hr>
+                                <div class="core-values__card">
+                                    <img class="core-values__card-img" src="@img/icons/ic-surface.svg" alt="">
+                                    <p class="core-values__card-tittle">Professional Growth</p>
+                                    <p class="parag core-values__card-parag">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.</p>
+                                </div>
+                                <hr>
+                                <div class="core-values__card">
+                                    <img class="core-values__card-img" src="@img/icons/ic-money.svg" alt="">
+                                    <p class="core-values__card-tittle">Growing Salary</p>
+                                    <p class="parag core-values__card-parag">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
-            @@include('./html/footer.html');
+            @@include('./html/footer.html')
             <div class="modal" id="subscribe-modal">
                 <div class="modal__content">
                     <div class="tittle modal__tittle">Subscribe to our newsletter</div>
                     <form action="" method="get">
                         <label class="label modal__label" for="name">Name*</label>
-                        <input class="input modal__input" type="text" id="name" placeholder="Your name">
+                        <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
                         <label class="label modal__label" for="email">Email*</label>
                         <input class="input modal__input" type="email" id="email" placeholder="Your working email">
                         <hr>
@@ -97,7 +124,7 @@
                     <div class="tittle modal__tittle">Send your CV</div>
                     <form action="" method="get">
                         <label class="label modal__label" for="name">Name*</label>
-                        <input class="input modal__input" type="text" id="name" placeholder="Your name">
+                        <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
                         <label class="label modal__label" for="location">Location*</label>
                         <select name="location" id="location" class="input modal__input">
                             <option value="europe">Europe</option>
@@ -120,7 +147,7 @@
                     <button class="modal__exit-button"></button>
                 </div>
             </div>
-            <script src="js/app.min.js"></script>
+            <script src="js/app.min.js"></script
         </div>
     </body>
 </html>
