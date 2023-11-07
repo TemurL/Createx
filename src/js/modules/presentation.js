@@ -46,11 +46,11 @@ export const presentation = () => {
             let activeLi = document.getElementsByClassName(listItemModif)[0];
             let index = listItemArr.indexOf(activeLi);
             if (btn.classList.contains('next')) {
-                if (index === listItemArr.length - 1) return
+                if (index === listItemArr.length - 1) return listItemArr[0].click();
                 setActiveLi(listItemArr[index + 1]);
                 setSlidesContainerTransition(index + 1);
             } else {
-                if (index === 0) return
+                if (index === 0) return listItemArr.at(-1).click();
                 setActiveLi(listItemArr[index - 1]);
                 setSlidesContainerTransition(index - 1);
             }
