@@ -50,9 +50,11 @@
     .clients__img {
         width: 30vw;
     }
-    .clients + * {
-        padding-top: inherit;
+
+    .work__client-logos {
+        padding-block: 5rem;
     }
+
     .project-cards-block__content {
         grid-template-columns: 1fr 1fr;
     }
@@ -69,6 +71,15 @@
 
     .vacant-positions__send-cv {
         flex-basis: auto;
+    }
+
+    .img-and-form__img {
+        display: none;
+    }
+
+    .contact-us__form {
+        max-width: 700px;
+        margin-inline: auto;
     }
 
 }
@@ -103,7 +114,8 @@
         display: block;
     }
     .hero {
-        background-color: #ffffffa1;
+        background-color: #F4F5F6;
+        background-image: url('../img/bg-image-services-back.png');
     }
     .hero__parag {
         color: var(--black-color);
@@ -305,6 +317,14 @@
         display: none;
     }
 
+    .contact-us__content {
+        margin: 0;
+    }
+
+    .img-and-form {
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -324,6 +344,78 @@
     .slide__parag {
         margin-block: 24px;
     }
+
+    .ask-mail {
+        top: 0;
+    }
+    .ask-mail__content {
+        box-shadow: none;
+    }
+    .portfolio__card {
+        flex-basis: 300px;
+    }
+
+    .container > div:not(
+        .header__content,
+        .hero__content, 
+        .katalog__collaps-button, 
+        .katalog__content, 
+        .newspaper__map, 
+        .newspaper__content, 
+        .footer *, .slider__map, 
+        .slider__content) {
+        padding-block: 5rem;
+    }
+
+    .ceo__text-content {
+        box-shadow: none;
+        padding-block: 0;
+    }
+
+    .ceo__footer {
+        padding: 0;
+    }
+
+    .about__core-values {
+        padding: 0;
+    }
+
+    .core-values__content {
+        margin-block: 0;
+    }
+
+    .we-can-do {
+        padding-block: 0;
+    }
+
+    .project-cards-block__content {
+        margin-block: 0;
+    }
+
+    .project-cards-block__card {
+        height: 300px;
+    }
+
+    .categories__content {
+        margin: 0;
+    }
+    .categories__ul {
+        display: block;
+    }
+
+    .newspaper__page {
+        grid-template-columns: 1fr;
+    }
+
+    .newspaper__page #new-card_001 {
+        height: 400px;
+    }
+
+    .img-and-form .form__top {
+        flex-direction: column;
+        gap: 0;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
