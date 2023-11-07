@@ -7,6 +7,75 @@
         <div class="wrapper">
             @@include('./html/header.html')
             <main class="main">
+                <section class="hero contact__hero">
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="tittle hero__tittle">CONTACT</div>
+                            <p class="parag hero__parag">Contact us for all your construction needs. We always welcome any questions and comments.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact-us">
+                    <div class="container">
+                        <div class="contact-us__content">
+                            <div class="tittle contact-us__tittle">Contact us</div>
+                            <p class="parag contact-us__parag">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+                            <div class="img-and-form">
+                                <img class="img-and-form__img" src="@img/image-contact-near-form.jpg" alt="">
+                                <form action="" method="get" class="form contact-us__form">
+                                    <div class="form__top">
+                                        <div>
+                                            <label class="label form" for="name">Name*</label>
+                                            <input class="input form__input" type="text" id="name" placeholder="Your name" autofocus>
+                                            <label class="label form" for="phone">Phone*</label>
+                                            <input class="input form__input" type="tel" id="phone" placeholder="Your phone number">
+                                            <label class="label form" for="email">Email*</label>
+                                            <input class="input form__input" type="email" id="email" placeholder="Your working email">
+                                        </div>
+                                        <div>
+                                            <label class="label form" for="location">I am interested in</label>
+                                            <select name="location" id="location" class="input form__input">
+                                                <option value="europe">Interior Design</option>
+                                                <option value="Asia">Project Development</option>
+                                                <option value="Africa">Construction</option>
+                                                <option value="South-America">Repairs</option>
+                                            </select>
+                                            <label class="label form__label" for="location">Location*</label>
+                                            <select name="location" id="location" class="input form__input">
+                                                <option value="europe">Europe</option>
+                                                <option value="Asia">Asia</option>
+                                                <option value="Africa">Africa</option>
+                                                <option value="South-America">South America</option>
+                                                <option value="North-America">North America</option>
+                                            </select>
+                                            <fieldset class="fieldset form__fieldset">
+                                                <legend class="label form__label">Preferred contact method</legend>
+                                                <input type="radio" name="radio-phone" id="radio-phone" value="phone" checked>
+                                                <label class="label form__radio-label" for="radio-phone">Phone</label>
+                                                <input type="radio" name="radio-phone" id="radio-email" value="email">
+                                                <label class="label form__radio-label" for="radio-email">Email</label>
+                                                <input type="radio" name="radio-phone" id="radio-viber" value="viber">
+                                                <label class="label form__radio-label" for="radio-vider">Viber</label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="form__bottom">
+                                        <label class="label form__label" for="message">Message*</label>
+                                        <textarea class="input form__textaria" name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                                        <div>
+                                            <input type="checkbox" id="form__agree" name="">
+                                            <label class="label footer__label" for="form__agree">I agree to receive communications from Createx Construction Bureau.</label>
+                                            <button class="button filled-button footer__button form__button" id="contact__form-btn" form="footer__form" type="submit" disabled>send request</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="offices">
+                    <!-- stopped here -->
+                </section>
             </main>
             @@include('./html/footer.html')
             <script src="js/app.min.js"></script>

@@ -1,0 +1,59 @@
+.contact__hero {
+    background-image: url('../img/background-contact.png');
+}
+
+.contact-us__parag {
+    text-align: center;
+}
+
+.contact-us__content {
+    margin-block: 100px;
+}
+
+.img-and-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+    padding-block: 60px;
+}
+
+.img-and-form__img {
+    border-radius: 4px;
+}
+
+.img-and-form {
+    .form__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .form__fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+
+        legend {
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-inline-end: 5px;
+        }
+    }
+
+    .form__top > * {
+        flex: 1;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
+    .form__textaria {
+        resize: none;
+    }
+
+}
