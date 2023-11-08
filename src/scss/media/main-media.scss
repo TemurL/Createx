@@ -115,7 +115,7 @@
     }
     .hero {
         background-color: #F4F5F6;
-        background-image: url('../img/bg-image-services-back.png');
+        background-image: url('../img/backgrounds/bg-image-services-back.png');
     }
     .hero__parag {
         color: var(--black-color);
@@ -182,15 +182,6 @@
     #new-card_003 {
         grid-column: 1;
     }
-    // --------------------------------------
-    // old version
-
-    // .katalog__filters {
-    //     flex-direction: column;
-    // }
-
-
-    // version with collapse
 
     .katalog {
         border-top: 2px solid var(--accent-color);
@@ -266,7 +257,6 @@
 
 
 
-    // ----------------------------------
     .services__card-img {
         width: 35px;
     }
@@ -325,6 +315,18 @@
         padding: 0;
     }
 
+    .container > div:not(
+        .header__content,
+        .hero__content, 
+        .katalog__collaps-button, 
+        .katalog__content, 
+        .newspaper__map, 
+        .newspaper__content, 
+        .footer *, .slider__map, 
+        .slider__content) {
+        padding-block: 5rem;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -338,9 +340,7 @@
     .hero__content {
         width: 100%;
     }
-    .slider {
-        height: calc(100svh - var(--header-height));
-    }
+
     .slide__parag {
         margin-block: 24px;
     }
@@ -353,18 +353,6 @@
     }
     .portfolio__card {
         flex-basis: 300px;
-    }
-
-    .container > div:not(
-        .header__content,
-        .hero__content, 
-        .katalog__collaps-button, 
-        .katalog__content, 
-        .newspaper__map, 
-        .newspaper__content, 
-        .footer *, .slider__map, 
-        .slider__content) {
-        padding-block: 5rem;
     }
 
     .ceo__text-content {

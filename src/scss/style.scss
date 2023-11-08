@@ -365,7 +365,7 @@ a.slide__button {
 
 .services {
     background-color: #F4F5F6;
-    background-image: url('@img/bg-image-services-back.png');
+    background-image: url('@img/backgrounds/bg-image-services-back.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -410,10 +410,10 @@ a.slide__button {
 }
 
 #services__card-1:hover {
-    background-image: url('@img/image-service-card-back.jpg');
+    background-image: url('@img/service-block/image(3).jpg');
 }
 #services__card-2:hover {
-    background-image: url('@img/image-IMG-FOOTER-BG.jpg');
+    background-image: url('@img/backgrounds/image-IMG-FOOTER-BG.jpg');
 }
 #services__card-3:hover {
     background-image: url('@img/slider/image-hero-forth.jpg');
@@ -457,13 +457,13 @@ a.slide__button {
 }
 
 #portfolio__card-1 {
-    background-image: url('@img/port-card-back-1.jpg');
+    background-image: url('@img/portfolio/port-card-back-1.jpg');
 }
 #portfolio__card-2 {
-    background-image: url('@img/port-card-back-2.png');
+    background-image: url('@img/portfolio/port-card-back-2.png');
 }
 #portfolio__card-3 {
-    background-image: url('@img/port-card-back-3.png');
+    background-image: url('@img/portfolio/port-card-back-3.png');
 }
 
 .card__text-content {
@@ -660,7 +660,7 @@ a.slide__button {
 
 .footer__up-side {
     padding-block: 80px;
-    background-image: url('../img/image-IMG-FOOTER-BG.jpg');
+    background-image: url('../img/backgrounds/image-IMG-FOOTER-BG.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
