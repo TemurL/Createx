@@ -85,6 +85,9 @@
         max-width: 700px;
         margin-inline: auto;
     }
+    .hero__parag {
+        color: var(--black-color);
+    }
 
 }
 
@@ -121,10 +124,7 @@
         background-color: #F4F5F6;
         background-image: url('../img/backgrounds/bg-image-services-back.png');
     }
-    .hero__parag {
-        color: var(--black-color);
-        text-shadow: 2px 0px 15px white;
-    }
+
     .available-positions__hero {
         background-blend-mode: overlay;
     }

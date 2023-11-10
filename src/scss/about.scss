@@ -126,15 +126,6 @@
 .history__button.next {
     background-image: url('../img/presentation/controls/next.svg');
 }
-.history__button.prev:hover {
-    background-image: url('../img/presentation/controls/prev-white.svg');
-}
-.history__button.next:hover {
-    background-image: url('../img/presentation/controls/next-white.svg');
-}
-.history__button:hover {
-    background-color: #ff5930;
-}
 
 .history__tittle {
     text-align: start;
@@ -217,28 +208,28 @@
     background-image: url('../img/presentation/image-1.jpg');
 }
 .presentation__slide:nth-child(2) .presentation__slide-img {
-    background-image: url('../img/port-card-back-5.png');
+    background-image: url('../img/presentation/image-2.jpg');
 }
 .presentation__slide:nth-child(3) .presentation__slide-img {
-    background-image: url('../img/port-card-back-6.png');
+    background-image: url('../img/presentation/image-3.jpg');
 }
 .presentation__slide:nth-child(4) .presentation__slide-img {
-    background-image: url('../img/slider/construction.jpeg');
+    background-image: url('../img/presentation/image-4.jpeg');
 }
 .presentation__slide:nth-child(5) .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
+    background-image: url('../img/presentation/image-5.jpg');
 }
 .presentation__slide:nth-child(6) .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
+    background-image: url('../img/presentation/image-6.jpg');
 }
 .presentation__slide:nth-child(7) .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
+    background-image: url('../img/presentation/image-7.jpg');
 }
 .presentation__slide:nth-child(8) .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
+    background-image: url('../img/presentation/image-8.jpg');
 }
 .presentation__slide:nth-child(9) .presentation__slide-img {
-    background-image: url('../img/presentation/image-1.jpg');
+    background-image: url('../img/presentation/image-9.jpg');
 }
 
 .presentation__slide-parag {
@@ -328,6 +319,16 @@
 @media screen and (min-width: 767px) {
     .team-member:hover .team-member__socials {
         transform: translateY(0);
+    }
+
+    .history__button.prev:hover {
+        background-image: url('../img/presentation/controls/prev-white.svg');
+    }
+    .history__button.next:hover {
+        background-image: url('../img/presentation/controls/next-white.svg');
+    }
+    .history__button:hover {
+        background-color: #ff5930;
     }
 }
 
