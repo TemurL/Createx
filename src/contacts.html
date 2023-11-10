@@ -21,7 +21,10 @@
                             <div class="tittle contact-us__tittle">Contact us</div>
                             <p class="parag contact-us__parag">Please complete the form. Detailed information will help us to make a tuned offer.</p>
                             <div class="img-and-form">
-                                <img class="img-and-form__img" src="@img/image-contact-near-form.jpg" alt="">
+                                <picture class="img-and-form__img">
+                                    <source srcset="@img/image-contact-near-form.jpg">
+                                    <img src="@img/image-contact-near-form.jpg" alt="">
+                                </picture>
                                 <form action="" method="get" class="form contact-us__form">
                                     <div class="form__top">
                                         <div>
@@ -33,8 +36,8 @@
                                             <input class="input form__input" type="email" id="email" placeholder="Your working email">
                                         </div>
                                         <div>
-                                            <label class="label form" for="location">I am interested in</label>
-                                            <select name="location" id="location" class="input form__input">
+                                            <label class="label form" for="interested">I am interested in</label>
+                                            <select name="location" id="interested" class="input form__input">
                                                 <option value="europe">Interior Design</option>
                                                 <option value="Asia">Project Development</option>
                                                 <option value="Africa">Construction</option>

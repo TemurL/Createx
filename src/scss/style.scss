@@ -11,6 +11,7 @@
     --container-padding-inline: 30px;
     --header-height: 92px;
     --hero-padding-top: 100px;
+    --padding-block-for-sections: 60px 0;
 }
 html {
     font-family: 'Ubuntu', sans-serif;
@@ -227,7 +228,7 @@ a.slide__button {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    margin-block: 75px;
+    margin-top: 75px;
 }
 
 .sec-footer__tittle {
@@ -236,10 +237,14 @@ a.slide__button {
     min-width: max-content;
 }
 
-.promo-video__content {
-    text-align: center;
-    margin: 100px 0;
+.promo-video {
+    padding: var(--padding-block-for-sections);
 }
+
+.promo-video__parag {
+    text-align: center;
+}
+
 .promo-video__video-sec {
     height: 500px;
     position: relative;
@@ -250,7 +255,7 @@ a.slide__button {
     background-color: #000000a2;
     background-blend-mode: overlay;
     border-radius: 4px;
-    margin: 60px 0;
+    margin: 60px 0 0 0;
     cursor: pointer;
 }
 .promo-video__play-button {
@@ -266,16 +271,19 @@ a.slide__button {
     bottom: 32px;
 }
 
+.core-values {
+    padding: var(--padding-block-for-sections);
+}
+
 .core-values__content {
     text-align: center;
-    margin: 60px 0;
 }
 
 .core-values__cards-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 60px 0;
+    margin: 60px 0 0 0;
 }
 .core-values__cards-block hr {
     transform: rotate(90deg);
@@ -301,7 +309,8 @@ a.slide__button {
 
 .ask-mail {
     position: relative;
-    top: 92px;    
+    top: 92px;
+    padding: var(--padding-block-for-sections); 
 }
 
 .ask-mail + section {
@@ -369,10 +378,10 @@ a.slide__button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: var(--padding-block-for-sections);
 }
 
 .services__content {
-    padding-block: 100px 80px;
     text-align: center;
 }
 
@@ -427,7 +436,8 @@ a.slide__button {
 }
 
 .portfolio {
-    margin-top: 120px;
+    // margin-top: 60px;
+    padding: var(--padding-block-for-sections);
 }
 
 .portfolio__tittle {
@@ -476,10 +486,11 @@ a.slide__button {
     box-shadow: 0 0 15px 0px #0000007d;
 }
 
-.card:hover .card__text-content {
+.card__text-content:hover,
+.card__text-content:active {
     bottom: 0;
 }
-.card:hover .card__text-content_active {
+.card__text-content_active {
     bottom: 0;
 }
 
@@ -506,13 +517,14 @@ a.slide__button {
 }
 
 .clients {
+    padding: var(--padding-block-for-sections);
+    padding-block-end: 0;
     background-color: #F4F5F6;
 }
 
 
 .clients__content {
     text-align: center;
-    padding-block: 80px 0;
 }
 
 .clients__logos {
@@ -565,11 +577,12 @@ a.slide__button {
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: -300px;
+    padding: var(--padding-block-for-sections);
 }
 
 
 .facts__content {
-    padding-block: 120px;
+    padding-block: 60px;
 }
 
 .facts__pie-charts-block {

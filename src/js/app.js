@@ -1,6 +1,5 @@
 import * as TLFunc from './modules/functions.js';
 import { mobMenu } from './modules/mobMenu.js';
-import { portfolioCard } from './modules/portfolioCard.js';
 import { serviceCardHover } from './modules/serviceCardHover.js';
 import { newCard } from './modules/newCard.js';
 import { formBtn } from './modules/formBtn.js';
@@ -12,14 +11,15 @@ import { katalogCollaps } from './modules/katalogCollaps.js';
 import { newspaper } from './modules/newspaper.js';
 import { newspaperMapingBtns } from './modules/newspaperMapingBtns.js';
 import { modal } from './modules/modal.js';
+import { teamSocials } from './modules/teamSocials.js';
 
 TLFunc.isWebp()
 
 modal();
 indexSlider();
 mobMenu();
+teamSocials();
 serviceCardHover();
-// portfolioCard();
 newCard();
 formBtn();
 headerBack();
