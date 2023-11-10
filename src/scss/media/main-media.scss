@@ -192,6 +192,7 @@
     }
 
 
+
     .katalog__collaps-button {
         display: block;
         font-weight: 900;
@@ -232,6 +233,7 @@
 
     .katalog__content_open {
         grid-template-rows: 1fr;
+        padding-bottom: 24px;
     }
 
     .katalog__collaps-button_open::after {
@@ -348,25 +350,10 @@
         flex-basis: 300px;
     }
 
-    .ceo__footer {
-        padding: 0;
-    }
-
-    .we-can-do {
-        padding-block: 0;
-    }
-
-    .project-cards-block__content {
-        margin-block: 0;
-    }
-
     .project-cards-block__card {
         height: 300px;
     }
 
-    .categories__content {
-        margin: 0;
-    }
     .categories__ul {
         display: block;
     }

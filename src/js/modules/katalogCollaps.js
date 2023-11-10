@@ -6,6 +6,7 @@ export const katalogCollaps = () => {
     btn.addEventListener('click', () => {
         container.classList.toggle('katalog__content_open');
         btn.classList.toggle('katalog__collaps-button_open');
+        btn.textContent = document.querySelector('.katalog__button_active').textContent
     })
     katalodBtnArr.forEach(item => {
         item.addEventListener('click', () => btn.click())
