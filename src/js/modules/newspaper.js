@@ -47,7 +47,6 @@ export const newspaper = (cardsQttOnPage) => {
     const moveToNewPage = (cardsQttOnPage) => {
         // cardsQttOnPage = 2;
         while (newsPagesArr[0].children.length > cardsQttOnPage) {
-            console.log('start');
             let newPage = document.createElement('div');
             newPage.classList.add('newspaper__page');
             if (newsPagesArr[0].children.length - cardsQttOnPage >= cardsQttOnPage) {
@@ -61,7 +60,6 @@ export const newspaper = (cardsQttOnPage) => {
                 }
             }
             newspaperContent.appendChild(newPage);
-            console.log('done');
         }
     }
 

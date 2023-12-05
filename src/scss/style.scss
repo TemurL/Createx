@@ -265,7 +265,14 @@ a.slide__button {
     position: absolute;
     left: calc(50% - 40px);
     top: calc(50% - 40px);
+    transition: 0.3s;
+
+    &:hover {
+        scale: 1.2;
+    }
 }
+
+
 .promo-video__mute-button {
     position: absolute;
     left: 32px;
