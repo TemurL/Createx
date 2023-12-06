@@ -1,18 +1,19 @@
 export const modal = () => {
-    if (document.title !== 'About Us') return
-
 
     const subBtn = document.getElementById('subscribe-button');
     const CVBtn = document.getElementById('send-cv-button');
+    const SubmitRequestBtn = document.getElementById('submit-request');
+
+    if (subBtn) subBtn.addEventListener('click', () => modalAct(subModal));
+    if (CVBtn) CVBtn.addEventListener('click', () => modalAct(CVModal));
+    if (SubmitRequestBtn) SubmitRequestBtn.addEventListener('click', () => modalAct(subModal));
+
+
     let subModal = document.getElementById('subscribe-modal');
     let CVModal = document.getElementById('CV-modal');
 
-    if (!subBtn) return
     const modalModif = 'modal_active';
     const modifScrollLock = 'scroll-lock';
-
-    
-
 
     const modalAct = (modal) => {
         if (!modal.classList.contains(modalModif)) {
@@ -28,9 +29,6 @@ export const modal = () => {
         document.body.classList.toggle(modifScrollLock);
         document.querySelector('html').classList.toggle(modifScrollLock);
     }
-
-    subBtn.addEventListener('click', () => modalAct(subModal));
-    CVBtn.addEventListener('click', () => modalAct(CVModal));
 
     let closeBtn = document.querySelectorAll('.modal__exit-button');
 

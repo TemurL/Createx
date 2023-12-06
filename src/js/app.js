@@ -13,6 +13,8 @@ import { newspaperMapingBtns } from './modules/newspaperMapingBtns.js';
 import { modal } from './modules/modal.js';
 import { teamSocials } from './modules/teamSocials.js';
 import { askMailForm } from './modules/askMailForm.js';
+import { contactUsForm } from './modules/contactUsForm.js';
+import { footerForm } from './modules/footerForm.js';
 
 TLFunc.isWebp()
 
@@ -30,7 +32,12 @@ katalogCollaps();
 // Qqt of cards on a single page {newspaper(=> n )}
 newspaper(2);
 newspaperMapingBtns();
+
+//forms
 askMailForm();
+contactUsForm();
+footerForm();
+//-------
 
 
 const promoVideoAlert = () => {

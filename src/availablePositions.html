@@ -105,48 +105,6 @@
                 </section>
             </main>
             @@include('./html/footer.html')
-            <div class="modal" id="subscribe-modal">
-                <div class="modal__content">
-                    <div class="tittle modal__tittle">Subscribe to our newsletter</div>
-                    <form action="" method="get">
-                        <label class="label modal__label" for="name">Name*</label>
-                        <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
-                        <label class="label modal__label" for="email">Email*</label>
-                        <input class="input modal__input" type="email" id="email" placeholder="Your working email">
-                        <hr>
-                        <button class="button filled-button modal__button">send</button>
-                    </form>
-                    <button class="modal__exit-button"></button>
-                </div>
-            </div>
-            <div class="modal" id="CV-modal">
-                <div class="modal__content">
-                    <div class="tittle modal__tittle">Send your CV</div>
-                    <form action="" method="get">
-                        <label class="label modal__label" for="name">Name*</label>
-                        <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
-                        <label class="label modal__label" for="location">Location*</label>
-                        <select name="location" id="location" class="input modal__input">
-                            <option value="europe">Europe</option>
-                            <option value="Asia">Asia</option>
-                            <option value="Africa">Africa</option>
-                            <option value="South-America">South America</option>
-                            <option value="North-America">North America</option>
-                        </select>
-                        <label class="label modal__label" for="phone">Phone*</label>
-                        <input class="input modal__input" type="tel" id="phone" placeholder="Your phone number">
-                        <label class="label modal__label" for="email">Email*</label>
-                        <input class="input modal__input" type="email" id="email" placeholder="Your working email">
-                        <label class="label modal__label" for="letter">Covering letter</label>
-                        <textarea class="input modal__textaria" name="letter" id="letter" cols="30" rows="10" placeholder="Your covering letter"></textarea>
-                        <label for="file">Attach your CV*</label>
-                        <input type="file" id="file">
-                        <hr>
-                        <button class="button filled-button modal__button">send</button>
-                    </form>
-                    <button class="modal__exit-button"></button>
-                </div>
-            </div>
             <script src="js/app.min.js"></script>
         </div>
     </body>

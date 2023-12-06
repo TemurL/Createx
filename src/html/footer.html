@@ -1,20 +1,20 @@
 <footer class="footer">
     <div class="footer__up-side">
         <div class="container">
-            <from action="" method="get" class="footer__form" id="footer__form">
+            <form action="" method="get" class="footer__form">
                 <p class="footer__tittle">A quick way to discuss details</p>
                 <label class="label footer__label" for="name">Name*</label>
-                <input class="input footer__input" type="text" id="name" placeholder="Your name" autocomplete="on">
+                <input name="name" class="input footer__input" type="text" id="name" placeholder="Your name" autocomplete="on">
                 <label class="label footer__label" for="phone">Phone*</label>
-                <input class="input footer__input" type="tel" id="phone" placeholder="Your phone number" autocomplete="on">
+                <input name="phone" class="input footer__input" type="tel" id="phone" placeholder="Your phone number" autocomplete="on">
                 <label class="label footer__label" for="email">Email</label>
-                <input class="input footer__input" type="email" id="email" placeholder="Your working email" autocomplete="on">
+                <input name="email" class="input footer__input" type="email" id="email" placeholder="Your working email" autocomplete="on">
                 <label class="label footer__label" for="message">Message</label>
-                <input class="input footer__input" type="text" id="message" placeholder="Your message">
-                <input type="checkbox" id="agree" name="">
+                <input name="message" class="input footer__input" type="text" id="message" placeholder="Your message">
+                <input type="checkbox" id="agree" name="agree">
                 <label class="label footer__label" for="agree">I agree to receive communications from Createx <br> Construction Bureau.</label>
                 <button class="button filled-button footer__button" id="footer__form-btn" disabled>send request</button>
-            </from>
+            </form>
         </div>
     </div>
     <div class="down-side footer__down-side">
@@ -64,6 +64,48 @@
                 <div class="">© All rights reserved. Made with <img class="fooer__heart-icon" src="@img/icons/Heart.svg" alt=""> by Createx Studio</div>
                 <div class="footer__go-to-top">GO TO TOP <a href="#main"></a></div>
             </div>
+        </div>
+    </div>
+    <div class="modal" id="subscribe-modal">
+        <div class="modal__content">
+            <div class="tittle modal__tittle">Subscribe to our newsletter</div>
+            <form action="" method="get">
+                <label class="label modal__label" for="name">Name*</label>
+                <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
+                <label class="label modal__label" for="email">Email*</label>
+                <input class="input modal__input" type="email" id="email" placeholder="Your working email">
+                <hr>
+                <button class="button filled-button modal__button">send</button>
+            </form>
+            <button class="modal__exit-button"></button>
+        </div>
+    </div>
+    <div class="modal" id="CV-modal">
+        <div class="modal__content">
+            <div class="tittle modal__tittle">Send your CV</div>
+            <form action="" method="get">
+                <label class="label modal__label" for="name">Name*</label>
+                <input class="input modal__input" type="text" id="name" placeholder="Your name" autofocus>
+                <label class="label modal__label" for="location">Location*</label>
+                <select name="location" id="location" class="input modal__input">
+                    <option value="europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="South-America">South America</option>
+                    <option value="North-America">North America</option>
+                </select>
+                <label class="label modal__label" for="phone">Phone*</label>
+                <input class="input modal__input" type="tel" id="phone" placeholder="Your phone number">
+                <label class="label modal__label" for="email">Email*</label>
+                <input class="input modal__input" type="email" id="email" placeholder="Your working email">
+                <label class="label modal__label" for="letter">Covering letter</label>
+                <textarea class="input modal__textaria" name="letter" id="letter" cols="30" rows="10" placeholder="Your covering letter"></textarea>
+                <label for="file">Attach your CV*</label>
+                <input type="file" id="file">
+                <hr>
+                <button class="button filled-button modal__button">send</button>
+            </form>
+            <button class="modal__exit-button"></button>
         </div>
     </div>
 </footer>
